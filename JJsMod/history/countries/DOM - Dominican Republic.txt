@@ -1,0 +1,286 @@
+﻿capital = 319
+
+oob = "DOM_1936"
+
+set_research_slots = 4
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+	gwtank = 1
+	basic_light_tank = 1
+	early_fighter = 1
+	cv_early_fighter = 1
+	cv_naval_bomber1 = 1
+	cv_CAS1 = 1
+	naval_bomber1 = 1
+	CAS1 = 1
+	early_bomber = 1
+	early_submarine = 1
+	basic_submarine = 1
+	early_destroyer = 1
+	early_light_cruiser = 1
+	basic_light_cruiser = 1
+	early_heavy_cruiser = 1
+	early_battleship = 1
+	early_battlecruiser = 1
+	early_carrier = 1
+	basic_carrier = 1
+	transport = 1
+	superior_firepower = 1
+	fleet_in_being = 1
+	marines= 1
+	tech_mountaineers = 1
+}
+
+add_ideas = {
+	partial_economic_mobilisation
+	volunteer_only
+	free_trade
+}
+
+set_convoys = 50
+
+1939.1.1 = {
+	
+	add_political_power = 1198
+
+	#generic focuses
+	complete_national_focus = army_effort
+	complete_national_focus = equipment_effort
+	complete_national_focus = motorization_effort
+	complete_national_focus = aviation_effort
+	complete_national_focus = naval_effort
+	complete_national_focus = flexible_navy
+	complete_national_focus = industrial_effort
+	complete_national_focus = construction_effort
+	complete_national_focus = production_effort
+	
+	oob = "DOM_1939"
+	set_technology = {
+		infantry_weapons1 = 1
+
+		#doctrines
+		air_superiority = 1
+		mass_assault = 1
+		pocket_defence = 1
+		defence_in_depth = 1
+		fleet_in_being = 1
+		battlefleet_concentration = 1
+		convoy_sailing = 1
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		mechanical_computing = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		synth_oil_experiments = 1
+		oil_plant = 1
+		construction1 = 1
+		construction2 = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
+	}
+}
+
+set_politics = {
+
+	parties = {
+		democratic = { 
+			popularity = 20
+		}
+
+		fascism = {
+			popularity = 70
+		}
+		
+		communism = {
+			popularity = 10
+			#banned = no #default is no
+		}
+	}
+	
+	ruling_party = fascism
+	last_election = "1932.11.8"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+create_country_leader = {
+	name = "Rafael Trujillo"
+	desc = "POLITICS_RAFAEL_TRUJILLO_DESC"
+	picture = "gfx/leaders/South America/Portrait_South_America_Generic_3.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Jose Pacheco"
+	desc = "POLITICS_RAFAEL_TRUJILLO_DESC"
+	picture = "gfx/leaders/South America/Portrait_South_America_Generic_3.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		tenacious_defender
+		political_prisoner
+		staunch_constitutionalist
+	}
+}
+
+create_corps_commander = {
+	name = "George S. Patton"
+		picture = "Portrait_USA_George_S_Patton.dds"
+	traits = {  trickster panzer_leader }
+	skill = 5
+
+}
+
+create_corps_commander = {
+	name = "Jon J. Clausen"
+		picture = "Portrait_USA_George_S_Patton.dds"
+	traits = {  trickster panzer_leader urban_assault_specialist trait_engineer }
+	skill = 5
+
+}
+
+create_field_marshal = {
+	name = "Dwight D. Eisenhower"
+		picture = "Portrait_USA_Dwight_D_Eisenhower.dds"
+	traits = { logistics_wizard offensive_doctrine }
+	skill = 5
+
+}
+
+create_field_marshal = {
+	name = "Jose Pacheco"
+		picture = "Portrait_USA_Dwight_D_Eisenhower.dds"
+	traits = { logistics_wizard offensive_doctrine thorough_planner organisational_leader inspirational_leader }
+	skill = 5
+
+}
+
+create_navy_leader = {
+	name = "Chester W. Nimitz"
+		picture = "Portrait_USA_Chester_W_Nimitz.dds"
+	traits = { superior_tactician spotter }
+	skill = 5
+}
+
+1939.1.1 = {
+	set_politics = {
+
+		parties = {
+			democratic = { 
+				popularity = 0
+			}
+
+			fascism = {
+				popularity = 100
+			}
+			
+			communism = {
+				popularity = 0
+				#banned = no #default is no
+			}
+		}
+		
+		ruling_party = fascism
+		last_election = "1934.5.16"
+		election_frequency = 48
+		elections_allowed = no
+	}
+
+	create_country_leader = {
+		name = "Jacinto Peynado"
+		desc = "POLITICS_JACINTO_PEYNADO_DESC"
+		picture = "gfx/leaders/South America/Portrait_South_America_Generic_3.dds"
+		expire = "1965.1.1"
+		ideology = fascism_ideology
+		traits = {
+			#
+		}
+	}
+}
+### Ship Variants ###
+
+create_equipment_variant = {
+	name = "Barracuda Class"
+	type = submarine_1
+	upgrades = {
+		ship_reliability_upgrade = 1
+		sub_engine_upgrade = 1
+		sub_stealth_upgrade = 1
+		sub_torpedo_upgrade = 1
+	}
+	obsolete = yes
+}
+
+create_equipment_variant = {
+	name = "Farragut Class"
+	type = destroyer_1
+	upgrades = {
+		ship_torpedo_upgrade = 3
+		destroyer_engine_upgrade = 3
+		ship_ASW_upgrade = 3
+		ship_anti_air_upgrade = 3
+	}
+}
+
+create_equipment_variant = {
+	name = "Portland Class"
+	type = heavy_cruiser_1
+	upgrades = {
+		ship_reliability_upgrade = 2
+		ship_engine_upgrade = 2
+		ship_armor_upgrade = 2
+		ship_gun_upgrade = 2
+	}
+}
+
+create_equipment_variant = {
+	name = "Pennsylvania Class"
+	type = battleship_1
+	upgrades = {
+		ship_reliability_upgrade = 1
+		ship_engine_upgrade = 1
+		ship_armor_upgrade = 1
+		ship_gun_upgrade = 1
+	}
+	obsolete = yes
+}
+
+create_equipment_variant = {
+	name = "New Mexico Class"
+	type = battleship_1
+	upgrades = {
+		ship_reliability_upgrade = 2
+		ship_engine_upgrade = 2
+		ship_armor_upgrade = 2
+		ship_gun_upgrade = 2
+	}
+}
+
+create_equipment_variant = {
+	name = "Yorktown Class"
+	type = carrier_2
+	upgrades = {
+		ship_deckspace_upgrade = 1
+		carrier_armor_upgrade = 1
+		ship_engine_upgrade = 1
+		ship_reliability_upgrade = 1
+	}
+}

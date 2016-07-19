@@ -1,0 +1,197 @@
+﻿##### Division Templates #####
+division_template = {
+	name = "Infantry Division"  	# Standard formation for frontline divisions
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }  # US Hvy Field Arty consisted of 2 Bns, 155mm howitzers
+		engineer = { x = 0 y = 1 }   # US Eng Rgt consisted of 2 Bns
+	}
+}
+division_template = {
+	name = "National Guard Division"  	# Standard formation for NG divisions through late 1940
+
+	regiments = {						
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 3 y = 0 }
+		infantry = { x = 3 y = 1 }
+		infantry = { x = 3 y = 2 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }  # US Hvy Field Arty consisted of 2 Bns, 155mm howitzers
+		engineer = { x = 0 y = 1 }   # US Eng Rgt consisted of 2 Bns
+	}
+}
+division_template = {
+	name = "Cavalry Division"  		# 1st Cavalry Division only
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 0 y = 3 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+		cavalry = { x = 1 y = 3 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }      # US Cav Recon consisted of 52 ACs, 13 L Arm
+		engineer = { x = 0 y = 1 }   # US Eng Bn
+	}
+}
+division_template = {
+	name = "Garrison Brigade"  		# used for island defense (older equipment, lower experience)
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }   
+	}
+	priority = 0
+}
+
+units = {
+	##### Ejército de República Dominicana #####
+	division= {	
+		name = "Ejército Dominicana"
+		location = 7660 # Santo Domingo
+		division_template = "Infantry Division"		
+		start_equipment_factor = 0.3
+  }
+		navy = {					
+		name = "Destroyer Squadron 1"				
+		base = 7660
+		location = 7660
+		ship = { name = "ARD Santo Domingo" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = DOM } } }				
+		ship = { name = "ARD Farragut" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = DOM version_name = "Farragut Class"} } }	
+		ship = { name = "ARD Dewey" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = DOM version_name = "Farragut Class"} } }	
+		ship = { name = "ARD Hull" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = DOM version_name = "Farragut Class"} } }	
+		ship = { name = "ARD Macdonough" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = DOM version_name = "Farragut Class"} } }	
+		ship = { name = "ARD Worden" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = DOM version_name = "Farragut Class"} } }	
+		ship = { name = "ARD Dale" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = DOM version_name = "Farragut Class"} } }	
+		ship = { name = "ARD Monaghan" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = DOM version_name = "Farragut Class"} } }	
+		ship = { name = "ARD Aylwin" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = DOM version_name = "Farragut Class"} } }				
+	}
+	navy = {					
+		name = "Destroyer Squadron 2"				
+		base = 7660
+		location = 7660
+		ship = { name = "ARD El Benefactor" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = DOM } } }				
+		ship = { name = "ARD Porter" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = DOM version_name = "Farragut Class"} } }	
+		ship = { name = "ARD Selfridge" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = DOM version_name = "Farragut Class"} } }	
+		ship = { name = "ARD McDougal" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = DOM version_name = "Farragut Class"} } }	
+		ship = { name = "ARD Winslow" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = DOM version_name = "Farragut Class"} } }	
+		ship = { name = "ARD Phelps" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = DOM version_name = "Farragut Class"} } }	
+		ship = { name = "ARD Clark" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = DOM version_name = "Farragut Class"} } }	
+		ship = { name = "ARD Moffett" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = DOM version_name = "Farragut Class"} } }	
+		ship = { name = "ARD Balch" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = DOM version_name = "Farragut Class"} } }				
+	}
+	navy = {					
+		name = "Submarine Squadron 1"				
+		base = 7660
+		location = 7660		
+		ship = { name = "ARD Presidente Trujillo" definition = submarine equipment = { submarine_2 = { amount = 1 owner = DOM } } }
+		ship = { name = "ARD Juan Pablo Duarte" definition = submarine equipment = { submarine_2 = { amount = 1 owner = DOM } } }
+		ship = { name = "ARD Pedro Santana" definition = submarine equipment = { submarine_2 = { amount = 1 owner = DOM } } }
+		ship = { name = "ARD Cristobal Colón" definition = submarine equipment = { submarine_2 = { amount = 1 owner = DOM } } }
+		ship = { name = "ARD Juan Alejandro Acosta" definition = submarine equipment = { submarine_2 = { amount = 1 owner = DOM } } }
+		ship = { name = "ARD Juan Bautista Cambiaso" definition = submarine equipment = { submarine_2 = { amount = 1 owner = DOM } } }
+		ship = { name = "ARD Gerardo Jansen" definition = submarine equipment = { submarine_2 = { amount = 1 owner = DOM } } }
+		ship = { name = "ARD Juan Bautista Maggiolo" definition = submarine equipment = { submarine_2 = { amount = 1 owner = DOM } } }
+  }
+  navy = {					
+		name = "Submarine Squadron 2"				
+		base = 7660
+		location = 7660		
+		ship = { name = "ARD Barracuda" definition = submarine equipment = { submarine_2 = { amount = 1 owner = DOM } } }
+		ship = { name = "ARD Bass" definition = submarine equipment = { submarine_2 = { amount = 1 owner = DOM } } }
+		ship = { name = "ARD Bonita" definition = submarine equipment = { submarine_2 = { amount = 1 owner = DOM } } }
+		ship = { name = "ARD Argonaut" definition = submarine equipment = { submarine_2 = { amount = 1 owner = DOM } } }
+		ship = { name = "ARD Narwhal" definition = submarine equipment = { submarine_2 = { amount = 1 owner = DOM } } }
+		ship = { name = "ARD Nautilus" definition = submarine equipment = { submarine_2 = { amount = 1 owner = DOM } } }
+		ship = { name = "ARD Dolphin" definition = submarine equipment = { submarine_2 = { amount = 1 owner = DOM } } }
+		ship = { name = "ARD Cachalot" definition = submarine equipment = { submarine_2 = { amount = 1 owner = DOM } } }
+  }
+}
+
+##### No notable air force #####
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "DOM"
+		}
+		requested_factories = 5
+		progress = 0.47
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "USA" 
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "USA" 
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_1
+			version_name = "Farragut Class"
+			creator = "DOM"
+		}
+		requested_factories = 5
+		progress = 0.80
+		amount = 8
+	}
+	add_equipment_production = {
+		equipment = {
+			type = submarine_2
+			creator = "DOM"
+		}
+		requested_factories = 5
+		progress = 0.50
+		amount = 8
+	}
+	add_equipment_production = {
+		equipment = {
+			type = light_cruiser_2
+			creator = "DOM"
+		}
+		requested_factories = 5
+		progress = 0.85
+		amount = 3
+	}
+}
