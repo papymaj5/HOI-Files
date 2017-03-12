@@ -1,0 +1,57 @@
+state=
+{
+	id=319
+	name="STATE_319"
+	manpower = 5756000
+	
+	state_category = megalopolis
+	
+	resources={
+
+		chromium=40
+		oil=40
+		aluminium=40
+		rubber=40
+		tungsten=40
+		steel=40
+	}
+	history=
+	{
+		owner = DOM
+		buildings = {
+			infrastructure = 10
+			arms_factory = 13
+			industrial_complex = 18
+			dockyard = 6
+			#arms_factory = 8
+			#industrial_complex = 13
+			#dockyard = 4
+			air_base = 10
+			anti_air_building = 2
+			rocket_site = 0
+			7660 = {
+				naval_base = 10
+			}
+			4598 = {
+				naval_base = 10
+			}
+			7632 = {
+				naval_base = 10
+			}
+			10484 = {
+				naval_base = 10
+			}
+		}
+		add_core_of = DOM
+		victory_points = {
+			7660 5 
+		}
+		victory_points = {
+			4598 1 
+		}
+
+	}
+	provinces={
+		4598 7632 7660 10484
+	}
+}

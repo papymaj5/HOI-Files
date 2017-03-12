@@ -1,0 +1,41 @@
+state=
+{
+	id=318
+	name="STATE_318"
+	manpower = 4380000
+	
+	state_category = megalopolis
+	
+	resources={
+		
+		chromium=10
+		oil=20
+		aluminium=20
+		rubber=20
+		tungsten=20
+		steel=20
+
+	}
+	history=
+	{
+		owner = DOM
+		buildings = {
+			infrastructure = 6
+			arms_factory = 11
+			industrial_complex = 20 
+			dockyard = 6
+			air_base = 10
+			4641 = {
+				naval_base = 2
+			}
+		}
+		add_core_of = HAI
+		victory_points = {
+			4641 5 
+		}
+
+	}
+	provinces={
+		1594 1635 4641
+	}
+}
