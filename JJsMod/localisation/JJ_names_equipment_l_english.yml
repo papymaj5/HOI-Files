@@ -13,13 +13,21 @@
  DOM_EQUIPMENT_VERSION_13:0 "A9A3"
  DOM_EQUIPMENT_VERSION_14:0 "A9A4"
  
- #Tank Destroyer
+ #Tank Destroyer / AA / ART
  DOM_light_tank_destroyer_equipment_1:0 "M6 Gun Motor Carriage"
  DOM_light_tank_destroyer_equipment_1_short:0 "M6 GMC"
+ DOM_light_tank_destroyer_equipment_2:0 "T56 Gun Motor Carriage"
+ DOM_light_tank_destroyer_equipment_2_short:0 "T56 GMC"
  DOM_light_tank_artillery_equipment_2:0 "M8 Howitzer Motor Carriage"
  DOM_light_tank_artillery_equipment_2_short:0 "M8 HMC"
+ DOM_light_tank_aa_equipment_2:0 "T65 Gun Motor Carriage"
+ DOM_light_tank_aa_equipment_2_short:0 "T65 GMC"
  DOM_light_tank_destroyer_equipment_3:0 "T48 Gun Motor Carriage"
  DOM_light_tank_destroyer_equipment_3_short:0 "T48 GMC"
+ DOM_light_tank_artillery_equipment_3:0 "M41 Howitzer Motor Carriage"
+ DOM_light_tank_artillery_equipment_3_short:0 "M41 HMC"
+ DOM_light_tank_aa_equipment_3:0 "M19 Multiple Gun Motor Carriage"
+ DOM_light_tank_aa_equipment_3_short:0 "M19 GMC"
  DOM_medium_tank_artillery_equipment_1:0 "M7 Priest"
  DOM_medium_tank_artillery_equipment_1_short:0 "M7 Priest"
  DOM_medium_tank_artillery_equipment_2:0 "M12 Gun Motor Carriage"
@@ -34,13 +42,15 @@
  DOM_medium_tank_destroyer_equipment_3_short:0 "M36"
  DOM_heavy_tank_artillery_equipment_3:0 "T92 Howitzer Motor Carriage"
  DOM_heavy_tank_artillery_equipment_3_short:0 "T92 HMC"
+ DOM_modern_tank_aa_equipment_1:0 "M42 Duster"
+ DOM_modern_tank_aa_equipment_1_short:0 "Duster"
  
  #Light Tank
  DOM_light_tank_equipment_1:0 "M2 Light Tank"
  DOM_light_tank_equipment_1_short:0 "M2 Light"
  DOM_light_tank_equipment_2:0 "M3 Stuart"
  DOM_light_tank_equipment_2_short:0 "M3 Stuart"
- DOM_light_tank_equipment_3:0 "Chaffee"
+ DOM_light_tank_equipment_3:0 "M24 Chaffee"
  DOM_light_tank_equipment_3_short:0 "Chaffee"
  
  #Medium Tank
@@ -95,10 +105,27 @@
  DOM_artillery_equipment_1_short:0 "75 mm Gun M1897"
  DOM_artillery_equipment_2:0 "105 mm M101A1"
  DOM_artillery_equipment_3:0 "155 mm M114"
+ 
  #rocket art & SP rocket art
  DOM_motorized_rocket_equipment:0 "T27 Xylophone"
  DOM_motorized_rocket_equipment_1:0 "T27 Xylophone"
  DOM_motorized_rocket_equipment_1_short:0 "Xylophone"
+ 
+ #Infantry Equipment
+ DOM_infantry_equipment_0:0 "M1903 Springfield"
+ DOM_infantry_equipment_0_short:0 "M1903 Springfield"
+ DOM_infantry_equipment_1:0 "M1 Garand"
+ DOM_infantry_equipment_1_short:0 "M1 Garand"
+ DOM_infantry_equipment_2:0 "M1 Thompson"
+ DOM_infantry_equipment_2_short:0 "M1 Thompson"
+ DOM_infantry_equipment_3:0 "M2 Carbine"
+ DOM_infantry_equipment_3_short:0 "M2 Carbine"
+ DOM_infantry_at:0 "M1 Bazooka"
+ DOM_infantry_at2:0 "M20 recoilless rifle"
+ DOM_support_weapons:0 "BAR & Stokes mortar"
+ DOM_support_weapons2:0 "M1917 Browning MG & M2 60 mm mortar"
+ DOM_support_weapons3:0 "M1919 Browning MG & M1 mortar"
+ DOM_support_weapons4:0 "M1941 Johnson MG & M2 4.2 inch mortar"
   
  ###Planes###
  DOM_fighter_equipment_0:0 "Curtiss P-1 Hawk"

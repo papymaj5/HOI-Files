@@ -130,6 +130,16 @@ give_guarantee = MEX
 		dispersed_industry2 = 1
 		dispersed_industry3 = 1
 	}
+	create_equipment_variant = {
+		name = "Martin M166"
+		type = tac_bomber_equipment_0
+		upgrades = {
+			plane_tac_bomb_upgrade = 2
+			plane_range_upgrade = 1
+			plane_engine_upgrade = 2
+			plane_reliability_upgrade = 3
+		}
+	}
 }
 
 
@@ -171,7 +181,10 @@ add_ideas = {
 
 
 # DIPLOMACY
-puppet = PHI
+set_autonomy = {
+	target = PHI
+	autonomous_state =  autonomy_puppet
+}
 
 1939.1.1 = {
 	set_national_unity = 0.7
@@ -519,6 +532,17 @@ create_equipment_variant = {
 }
 
 create_equipment_variant = {
+	name = "Colorado Class"
+	type = battleship_1
+	upgrades = {
+		ship_reliability_upgrade = 3
+		ship_engine_upgrade = 3
+		ship_armor_upgrade = 3
+		ship_gun_upgrade = 4
+	}
+}
+
+create_equipment_variant = {
 	name = "Yorktown Class"
 	type = carrier_2
 	upgrades = {
@@ -564,6 +588,18 @@ create_equipment_variant = {
 			ship_reliability_upgrade = 2
 		}
 	}
+
+	create_equipment_variant = {
+		name = "F2A Buffalo"
+		type = cv_fighter_equipment_1
+		upgrades = {
+			cv_plane_gun_upgrade = 5
+			cv_plane_range_upgrade = 0
+			plane_engine_upgrade = 2
+			plane_reliability_upgrade = 5
+		}
+	}
+
 
 	# 1941
 	#create_equipment_variant = {
