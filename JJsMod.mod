@@ -3,4 +3,4 @@ path="Mod/JJsMod"
 tags={
 	"Alternative History"
 }
-supported_version="1.3.*"
+supported_version="1.3.3"
