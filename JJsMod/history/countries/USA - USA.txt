@@ -1,39 +1,129 @@
-﻿capital = 361
+﻿capital = 847
 
 oob = "USA_1936"
 
-set_research_slots = 4
+set_research_slots = 6
 
 # Starting tech
 set_technology = {
+	################### infantry #############
 	infantry_weapons = 1
-	infantry_weapons1 = 1
+	#infantry_weapons1 = 1  ## The M1903A3 came into existance only after 1940.  Using Rock Island Arsenal old but retooled equipment.  
+	improved_infantry_weapons = 1	
+	marines = 1
+	marines2 = 1
+	amphibious_equipment = 1
+	semi_motorised_infantry = 1
+	motorised_infantry = 1
+	mechanised_infantry = 1
+	tech_infantry_uniforms = 1
+	tech_Garrison = 1
+	tech_Headquarters = 1
+	hmg = 1
+	mortars = 1
+	################# support #####################
 	tech_recon = 1
+	subtech_recon_mot_1 = 1
+	subtech_recon_cav_1 = 1
 	tech_support = 1		
 	tech_engineers = 1
+	tech_military_police = 1
+	tech_maintenance_company = 1
+	tech_field_hospital = 1
+	tech_logistics_company = 1
+	############## artillery #############
 	gw_artillery = 1
+	interwar_artillery = 1
+	interwar_medartillery = 1
+	medartillery1 = 1
+	interwar_antiair = 1
+	interwar_antitank = 1
+	################### armor ############
 	gwtank = 1
-	early_fighter = 1
-	cv_early_fighter = 1
-	cv_naval_bomber1 = 1
-	cv_CAS1 = 1
-	naval_bomber1 = 1
-	CAS1 = 1
-	early_bomber = 1
+	#tech_Tankettes = 1
+	tech_Gun_Carriers = 1
+	#
+	tech_ac_recon = 1
+	american_tech_1 = 1
+	american_tech_2 = 1
+	american_tech_3 = 1
+	american_tech_4 = 1
+	american_tech_5 = 1
+	american_tech_6 = 1
+	american_tech_7  = 1
+	tech_american_light_tank_equipment_1 = 1
+	tech_american_light_tank_equipment_2 =  1
+	################### aircraft ################
+	tech_usaaf = 1 
+	tech_american_aircraft1 = 1 
+	tech_boeing_f4b4_equipment_1 = 1 
+	tech_grumman_ff_equipment_1 = 1 
+	tech_grumman_f2f_equipment_1 = 1 
+	tech_grumman_f3f_equipment_1 = 1 
+	tech_lakes_bg_equipment_1 = 1 
+	tech_vought_sbu_equipment_1 = 1 
+	tech_great_lakes_tg2_equipment_1 = 1 
+	tech_martin_bm_equipment_1 = 1 
+	tech_douglas_tbd_equipment_1 = 1 
+	tech_northrop_a17_equipment_1 = 1 
+	tech_martin_b10_bomber_equipment_1 = 1 
+	tech_usa_boeing_p26_equipment_1 = 1 
+	tech_consolidated_p2y_equipment_1 = 1 
+	tech_consolidated_p30_equipment_1 = 1 
+	################## navy ######################
+	generic_submarine = 1
 	early_submarine = 1
 	basic_submarine = 1
-	early_destroyer = 1
-	early_light_cruiser = 1
-	basic_light_cruiser = 1
-	early_heavy_cruiser = 1
-	early_battleship = 1
-	early_battlecruiser = 1
-	early_carrier = 1
-	basic_carrier = 1
-	transport = 1
+	tech_usn = 1
+	#tech_usn_transport = 1
+	tech_usn_dd = 1
+	tech_usn_cl = 1
+	tech_usn_ca = 1
+	tech_usn_bb = 1
+	tech_usn_cv = 1
 	superior_firepower = 1
 	base_strike = 1
-
+	#basic_destroyer = 1 #BICE
+	#basic_heavy_cruiser = 1 #BICE
+	#pre_dreadnought_battleship = 1 #BICE
+	#dreadnought_battleship = 1 #BICE
+	#advanced_dreadnought_battleship = 1 #BICE
+	################## economy #############
+	basic_machine_tools = 1
+	improved_machine_tools = 1
+	concentrated_industry = 1
+	synth_oil_experiments = 1
+	oil_plant = 1
+	#improved_oil_plant = 1
+	uniform_industry = 1
+	armor_industry = 1
+	vehicle_industry = 1
+	vehicle_industry2 = 1
+    smallarms_industry = 1
+	Ltaircraft_industry = 1
+	Hvaircraft_industry = 1
+	ship_industry = 1
+	ship_industry2 = 1
+	infra_works = 1
+	infra_works2 = 1
+	rail_infra = 1
+	rail_infra2 = 1
+	road_infra = 1
+	road_infra2 = 1
+	air_infra = 1
+	air_infra2 = 1
+	port_infra = 1
+	port_infra2 = 1
+	heavy_industry = 1
+	heavy_industry2 = 1
+	civ_works = 1
+	civ_works2 = 1
+	housing_work = 1
+	housing_work2 = 1
+	hospital_work = 1
+	hospital_work2 = 1
+	schools_work = 1
+	schools_work2 = 1
 }
 
 #Monroe Doctrine
@@ -89,8 +179,8 @@ give_guarantee = MEX
 		interwar_antitank = 1
 		interwar_antiair = 1
 		infantry_weapons2 = 1
-		support_weapons = 1
-		support_weapons2 = 1
+		hmg = 1
+		hmg_2 = 1
 		marines = 1
 		improved_submarine = 1
 		basic_destroyer = 1
@@ -130,22 +220,9 @@ give_guarantee = MEX
 		dispersed_industry2 = 1
 		dispersed_industry3 = 1
 	}
-	create_equipment_variant = {
-		name = "Martin M166"
-		type = tac_bomber_equipment_0
-		upgrades = {
-			plane_tac_bomb_upgrade = 2
-			plane_range_upgrade = 1
-			plane_engine_upgrade = 2
-			plane_reliability_upgrade = 3
-		}
-	}
 }
 
-
-
-
-set_convoys = 400
+set_convoys = 800
 set_national_unity = 0.6
 
 set_politics = {
@@ -248,48 +325,48 @@ create_country_leader = {
 
 create_corps_commander = {
 	name = "George S. Patton"
-		picture = "Portrait_USA_George_S_Patton.dds"
-	traits = {  trickster panzer_leader }
+	picture = "Portrait_USA_George_S_Patton.dds"
+	traits = { Genius_General Navy_Cross trickster_CC panzer_leader gung_ho_general  blitzkrieg_master}
 	skill = 5
 
 }
 
-create_corps_commander = {
+create_field_marshal = {
 	name = "Omar Bradley"
-		picture = "Portrait_USA_Omar_Bradley.dds"
-	traits = {  trait_engineer  }
+	picture = "Portrait_USA_Omar_Bradley.dds"
+	traits = { Genius_General Navy_Cross trait_engineer_FM inspirational_leader thorough_planner spearhead_specialist}
 	skill = 5
 
 }
 
 create_field_marshal = {
 	name = "Dwight D. Eisenhower"
-		picture = "Portrait_USA_Dwight_D_Eisenhower.dds"
-	traits = { logistics_wizard offensive_doctrine }
+	picture = "Portrait_USA_Dwight_D_Eisenhower.dds"
+	traits = { Genius_General Navy_Cross logistics_wizard_FM offensive_doctrine_FM inspirational_leader organisational_leader thorough_planner naval_invader_FM}
 	skill = 5
 
 }
 
 create_corps_commander = {
 	name = "Geoffrey Keyes"
-		picture = "Portrait_USA_Geoffrey_Keyes.dds"
-	traits = { panzer_leader }
+	picture = "Portrait_USA_Geoffrey_Keyes.dds"
+	traits = { Awesome_General Distinguished_Service_Cross panzer_leader }
 	skill = 2
 
 }
 
 create_corps_commander = {
 	name = "Lucian Truscott"
-		picture = "Portrait_USA_Lucian_Truscott.dds"
-	traits = { trait_engineer  }
+	picture = "Portrait_USA_Lucian_Truscott.dds"
+	traits = { Masterful_General Silver_Star trait_engineer_CC  }
 	skill = 3
 
 }
 
 create_corps_commander = {
 	name = "Mark Clark"
-		picture = "Portrait_USA_Mark_W_Clark.dds"
-	traits = {  }
+	picture = "Portrait_USA_Mark_W_Clark.dds"
+	traits = { Genius_General Navy_Cross defensive_doctrine_CC  }
 	skill = 4
 
 }
@@ -297,47 +374,47 @@ create_corps_commander = {
 create_field_marshal = {
 	name = "Douglas MacArthur"
 	id = 57
-		picture = "Portrait_USA_Douglas_MacArthur.dds"
-	traits = { defensive_doctrine offensive_doctrine  }
+	picture = "Portrait_USA_Douglas_MacArthur.dds"
+	traits = { Genius_General Navy_Cross defensive_doctrine_FM offensive_doctrine_FM  naval_invader_FM}
 	skill = 4
 
 }
 
 create_corps_commander = {
 	name = "Walter Krueger"
-		picture = "Portrait_USA_Walter_Krueger.dds"
-	traits = {  }
+	picture = "Portrait_USA_Walter_Krueger.dds"
+	traits = { Decent_General Legion_of_Merit naval_invader_CC  }
 	skill = 3
 
 }
 
 create_corps_commander = {
 	name = "Lloyd Fredendall"
-		picture = "Portrait_USA_Lloyd_Fredendall.dds"
-	traits = {  }
+	picture = "Portrait_USA_Lloyd_Fredendall.dds"
+	traits = { Decent_General Legion_of_Merit }
 	skill = 2
 
 }
 
 create_corps_commander = {
 	name = "Leslie McNair"
-		picture = "Portrait_USA_Lesley_McNair.dds"
-	traits = {  old_guard }
+	picture = "Portrait_USA_Lesley_McNair.dds"
+	traits = { Masterful_General Silver_Star old_guard }
 	skill = 2
 
 }
 
 create_corps_commander = {
 	name = "Jonathan Wainwright"
-		picture = "Portrait_USA_Jonathan_Wainwright.dds"
-	traits = {  }
+	picture = "Portrait_USA_Jonathan_Wainwright.dds"
+	traits = { Competent_General Medal_of_Honor }
 	skill = 1
 }
 
 create_corps_commander = {
 	name = "Russell Hartle"
-		picture = "Portrait_USA_Russell_P_Hartle.dds"
-	traits = {  }
+	picture = "Portrait_USA_Russell_P_Hartle.dds"
+	traits = { Decent_General }
 	skill = 1
 	rank = 1
 }
@@ -345,271 +422,784 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Leonard Gerow"
 	picture = "Portrait_USA_Leonard_T_Gerow.dds"
-	traits = {  }
+	traits = { Awesome_General Distinguished_Service_Cross }
 	skill = 3
 }
 
 create_corps_commander = {
 	name = "Edward Brooks"
-		picture = "Portrait_USA_Edward_Brooks.dds"
-	traits = { panzer_leader }
+	picture = "Portrait_USA_Edward_Brooks.dds"
+	traits = { Awesome_General Distinguished_Service_Cross panzer_leader }
 	skill = 2
 }
 
 create_corps_commander = {
 	name = "Clarence Huebner"
-		picture = "Portrait_USA_Clarence_Huebner.dds"
-	traits = {  }
-	skill = 2
+	picture = "Portrait_USA_Clarence_Huebner.dds"
+	traits = { Bad_General }
+	skill = 1
 }
 
 create_corps_commander = {
 	name = "Alexander Patch"
-		picture = "Portrait_USA_Alexander_Patch.dds"
-	traits = {  commando }
+	picture = "Portrait_USA_Alexander_Patch.dds"
+	traits = { Masterful_General Silver_Star commando_CC naval_invader_CC}
 	skill = 3
 
 }
 
 create_corps_commander = {
 	name = "William Simpson"
-		picture = "Portrait_USA_William_Hood_Simpson.dds"
-	traits = {  }
-	skill = 3
-	
+	picture = "Portrait_USA_William_Hood_Simpson.dds"
+	traits = { Awesome_General Distinguished_Service_Cross }
+
+
+	skill = 3	
 }
 
 create_corps_commander = {
 	name = "J. Lawton Collins"
-		picture = "Portrait_USA_Lawton_Collins.dds"
-	traits = {  trickster }
+	picture = "Portrait_USA_Lawton_Collins.dds"
+	traits = { Masterful_General Silver_Star trickster_CC }
 	skill = 3
-	
+
 }
 
 create_corps_commander = {
 	name = "Courtney Hodges"
-		picture = "Portrait_USA_Cortney_Hodges.dds"
-	traits = {  panzer_leader }
+	picture = "Portrait_USA_Cortney_Hodges.dds"
+	traits = { Genius_General Navy_Cross panzer_leader }
 	skill = 4
 
 }
 
 create_corps_commander = {
 	name = "Joseph Stilwell"
-		picture = "Portrait_USA_Joseph_Stilwell.dds"
-	traits = {  }
+	picture = "Portrait_USA_Joseph_Stilwell.dds"
+	traits = { Decent_General logistics_wizard_CC }
 	skill = 1 
 }
 
 create_corps_commander = {
 	name = "Oscar Griswold"
-		picture = "Portrait_USA_Oscar_Griswold.dds"
-	traits = {   }
+	picture = "Portrait_USA_Oscar_Griswold.dds"
+	traits = { Decent_General Legion_of_Merit }
 	skill = 2
 }
 
 create_corps_commander = {
 	name = "Maurice Rose"
-		picture = "Portrait_USA_Maurice_Rose.dds"
-	traits = { panzer_leader  }
+	picture = "Portrait_USA_Maurice_Rose.dds"
+	traits = { Decent_General Legion_of_Merit panzer_leader  }
 	skill = 3
 }
 
+### navy ###
 create_navy_leader = {
 	name = "Ernest King"
-		picture = "Portrait_USA_Earnest_King.dds"
+	picture = "Portrait_USA_Earnest_King.dds"
 	traits = { blockade_runner superior_tactician }
 	skill = 5
 }
 
 create_navy_leader = {
 	name = "Chester W. Nimitz"
-		picture = "Portrait_USA_Chester_W_Nimitz.dds"
+	picture = "Portrait_USA_Chester_W_Nimitz.dds"
 	traits = { superior_tactician spotter }
 	skill = 5
 }
 
 create_navy_leader = {
 	name = "William Halsey, Jr."
-		picture = "Portrait_USA_William_Halsey_Jr.dds"
+	picture = "Portrait_USA_William_Halsey_Jr.dds"
 	traits = { superior_tactician spotter }
 	skill = 4
 }
 
 create_navy_leader = {
 	name = "Frank Jack Fletcher"
-		picture = "Portrait_USA_Frank_Jack_Fletcher.dds"
+	picture = "Portrait_USA_Frank_Jack_Fletcher.dds"
 	traits = { superior_tactician spotter }
 	skill = 3
 }
 
 create_navy_leader = {
 	name = "Raymond A. Spruance"
-		picture = "Portrait_USA_Raymond_A_Spruance.dds"
+	picture = "Portrait_USA_Raymond_A_Spruance.dds"
 	traits = { superior_tactician }
 	skill = 4
 }
 
 create_navy_leader = {
 	name = "Harold Rainsford Stark"
-		picture = "Portrait_USA_Harold_Rainsford_Stark.dds"
+	picture = "Portrait_USA_Harold_Rainsford_Stark.dds"
 	traits = { blockade_runner spotter }
 	skill = 2
 }
 
 create_navy_leader = {
 	name = "Arleigh Burke"
-		picture = "Portrait_USA_Arleigh_Burke.dds"
+	picture = "Portrait_USA_Arleigh_Burke.dds"
 	traits = { old_guard_navy superior_tactician }
 	skill = 4
 }
 
 create_navy_leader = {
 	name = "Charles M. Cooke, Jr."
-		picture = "Portrait_USA_Charles_M_Cooke.dds"
+	picture = "Portrait_USA_Charles_M_Cooke.dds"
 	traits = {  }
 	skill = 2
 }
 
-### Ship Variants ###
-
+create_navy_leader = {
+	name = "G.W Anderson"
+	picture = "Portrait_USA_Anderson.dds"
+	traits = {  }
+	skill = 3
+}
+create_navy_leader = {
+	name = "Callaghan"
+	picture = "Portrait_USA_Callaghan.dds"
+	traits = { blockade_runner superior_tactician }
+	skill = 1
+}
+create_navy_leader = {
+	name = "Comstock"
+	picture = "Portrait_USA_Generic_navy_3.dds"
+	traits = { seawolf }
+	skill = 1
+}
+create_navy_leader = {
+	name = "Cooley"
+	picture = "Portrait_USA_Cooley.dds"
+	traits = { superior_tactician }
+	skill = 2
+}
+create_navy_leader = {
+	name = "Cote"
+	picture = "Portrait_USA_Generic_navy_1.dds"
+	traits = { blockade_runner }
+	skill = 2
+}
+create_navy_leader = {
+	name = "Edwards"
+	picture = "Portrait_USA_Edwards.dds"
+	traits = {  }
+	skill = 3
+}
+create_navy_leader = {
+	name = "English"
+	picture = "Portrait_USA_English.dds"
+	traits = { seawolf }
+	skill = 3
+}
+create_navy_leader = {
+	name = "Ghormley"
+	picture = "Portrait_USA_Ghormley.dds"
+	traits = {  }
+	skill = 3
+}
+create_navy_leader = {
+	name = "Glassford	"
+	picture = "Portrait_USA_Generic_navy_2.dds"
+	traits = { spotter }
+	skill = 1
+}
+create_navy_leader = {
+	name = "Glover"
+	picture = "Portrait_USA_Glover.dds"
+	traits = { blockade_runner }
+	skill = 2
+}
+create_navy_leader = {
+	name = "Hart"
+	picture = "Portrait_USA_Hart.dds"
+	traits = { superior_tactician }
+	skill = 3
+}
+create_navy_leader = {
+	name = "Hall"
+	picture = "Portrait_USA_Hall.dds"
+	traits = { superior_tactician }
+	skill = 1
+}
+create_navy_leader = {
+	name = "Leahy"
+	picture = "Portrait_USA_Leahy.dds"
+	traits = { old_guard superior_tactician }
+	skill = 2
+}
+create_navy_leader = {
+	name = "Lockwood"
+	picture = "Portrait_USA_Lockwood.dds"
+	traits = { seawolf }
+	skill = 2
+}
+create_navy_leader = {
+	name = "Momsen"
+	picture = "Portrait_USA_Momsen.dds"
+	traits = { seawolf }
+	skill = 2
+}
+create_navy_leader = {
+	name = "Kalbfus"
+	picture = "Portrait_USA_Kalbfus.dds"
+	traits = { superior_tactician }
+	skill = 3
+}
+create_navy_leader = {
+	name = "Kimmel"
+	picture = "Portrait_USA_Kimmel.dds"
+	traits = {  }
+	skill = 3
+}
+create_navy_leader = {
+	name = "Kinkaid"
+	picture = "Portrait_USA_Kinkaid.dds"
+	traits = { blockade_runner  superior_tactician }
+	skill = 3
+}
+create_navy_leader = {
+	name = "McCormick"
+	picture = "Portrait_USA_McCormick.dds"
+	traits = {  }
+	skill = 3
+}
+create_navy_leader = {
+	name = "Mitscher"
+	picture = "Portrait_USA_Mitscher.dds"
+	traits = {  }
+	skill = 3
+}
+create_navy_leader = {
+	name = "Oldendorf"
+	picture = "Portrait_USA_Oldendorf.dds"
+	traits = {  }
+	skill = 3
+}
+create_navy_leader = {
+	name = "Powell"
+	picture = "Portrait_USA_Powell.dds"
+	traits = { blockade_runner }
+	skill = 2
+}
+create_navy_leader = {
+	name = "Price"
+	picture = "Portrait_USA_Price.dds"
+	traits = { spotter }
+	skill = 2
+}
+create_navy_leader = {
+	name = "Reeves"
+	picture = "Portrait_USA_Reeves.dds"
+	traits = { old_guard }
+	skill = 3
+}
+create_navy_leader = {
+	name = "F.C. Sherman"
+		picture = "Portrait_USA_F_C_Sherman.dds"
+	traits = { superior_tactician }
+	skill = 2
+}
+create_navy_leader = {
+	name = "F.P. Sherman"
+		picture = "Portrait_USA_F_P_Sherman.dds"
+	traits = { superior_tactician }
+	skill = 3
+}
+create_navy_leader = {
+	name = "Scott"
+	picture = "Portrait_USA_Scott.dds"
+	traits = { superior_tactician }
+	skill = 2
+}
+create_navy_leader = {
+	name = "K. Turner"
+	picture = "Portrait_USA_Generic_navy_3.dds"
+	traits = {  }
+	skill = 3
+}
+create_navy_leader = {
+	name = "R. Turner"
+	picture = "Portrait_USA_R_Turner.dds"
+	traits = {  }
+	skill = 3
+}
+create_navy_leader = {
+	name = "McDonald"
+	picture = "Portrait_USA_Generic_navy_1.dds"
+	traits = { spotter }
+	skill = 3
+}
+create_navy_leader = {
+	name = "J. Wright"
+		picture = "Portrait_USA_Wright.dds"
+	traits = { superior_tactician }
+	skill = 2
+}
+create_navy_leader = {
+	name = "Withers"
+		picture = "Portrait_USA_Generic_navy_2.dds"
+	traits = { seawolf }
+	skill = 2
+}
+###Air variants###
 create_equipment_variant = {
-	name = "Barracuda Class"
+		name = "Curtiss P-1A Hawk"
+		type = pre_war_fighter_equipment_1
+		upgrades = {
+			usa_p1a_upgrade = 1 
+		}
+		obsolete = yes
+	}
+create_equipment_variant = {
+		name = "Curtiss P-1B Hawk"
+		type = pre_war_fighter_equipment_1
+		upgrades = {
+			usa_p1b_upgrade = 1 
+		}
+		obsolete = yes
+	}
+create_equipment_variant = {
+		name = "Curtiss Hawk I"
+		type = pre_war_fighter_equipment_1
+		upgrades = {
+			usa_p6_upgrade = 1 
+		}
+		obsolete = yes
+	}
+create_equipment_variant = {
+		name = "Curtiss P-6E Hawk"
+		type = pre_war_fighter_equipment_1
+		upgrades = {
+			usa_p6e_upgrade = 1 
+		}
+		obsolete = yes
+	}
+create_equipment_variant = {
+		name = "Curtiss P-6S Hawk"
+		type = pre_war_fighter_equipment_1
+		upgrades = {
+			usa_p6s_upgrade = 1 
+		}
+		obsolete = yes
+	}
+create_equipment_variant = {
+		name = "Vought V-99M"
+		type = pre_war_fighter_equipment_1
+		upgrades = {
+			v99_corsair_upgrade = 1 
+		}
+		obsolete = yes
+	}
+create_equipment_variant = {
+		name = "Curtiss BT-32 Condor II"
+		type = prewar_bomber_equipment_1
+		upgrades = {
+			bt_32_upgrade = 1 
+		}
+		obsolete = yes
+	}
+create_equipment_variant = {
+		name = "Curtiss BT-32 Condor II (F)"
+		type = prewar_bomber_equipment_1
+		upgrades = {
+			bt_32_upgrade = 1 
+			floats_upgrade = 1 
+		}
+		obsolete = yes
+	}
+create_equipment_variant = {
+		name = "Vought O2U-1 Corsair"
+		type = prewar_cas_equipment_1
+		upgrades = {
+			o2u_corsair_upgrade = 1 
+		}
+		obsolete = yes
+	}
+create_equipment_variant = {
+		name = "Vought O2U-2M Corsair"
+		type = prewar_cas_equipment_1
+		upgrades = {
+			o2u2_corsair_upgrade = 1 
+		}
+		obsolete = yes
+	}
+create_equipment_variant = {
+		name = "Vought V-65 Corsair"
+		type = prewar_cas_equipment_1
+		upgrades = {
+			v65_corsair_upgrade = 1 
+		}
+		obsolete = yes
+	}
+create_equipment_variant = {
+		name = "Vought V-66B Corsair"
+		type = prewar_cas_equipment_1
+		upgrades = {
+			v65_corsair_upgrade = 1 
+			floats_upgrade = 1 
+		}
+		obsolete = yes
+	}
+create_equipment_variant = {
+		name = "Vought V-80"
+		type = pre_war_mr_equipment_1
+		upgrades = {
+			v80_corsair_upgrade = 1 
+		}
+		obsolete = yes
+	}
+create_equipment_variant = {
+		name = "Vought V-92C"
+		type = pre_war_mr_equipment_1
+		upgrades = {
+			v92_corsair_upgrade = 1 
+		}
+		obsolete = yes
+	}
+create_equipment_variant = {
+		name = "Boeing 256"
+		type = pre_war_mr_equipment_1
+		upgrades = {
+			usa_model256_upgrade = 1 
+		}
+		obsolete = yes
+	}
+create_equipment_variant = {
+		name = "Curtiss Hawk II"
+		type = pre_war_mr_equipment_1
+		upgrades = {
+			usa_hawkii_upgrade = 1 
+		}
+		obsolete = yes
+	}
+create_equipment_variant = {
+		name = "Curtiss Hawk I (C)"
+		type = pre_war_mr_equipment_1
+		upgrades = {
+			usa_hawkic_upgrade = 1 
+		}
+		obsolete = yes
+	}
+create_equipment_variant = {
+		name = "Curtiss Sea Hawk II"
+		type = pre_war_mr_equipment_1
+		upgrades = {
+			usa_hawkii_upgrade = 1 
+			floats_upgrade = 1
+		}
+		obsolete = yes
+	}
+create_equipment_variant = {
+		name = "Curtiss Hawk III"
+		type = pre_war_mr_equipment_1
+		upgrades = {
+			usa_hawkiii_upgrade = 1 
+		}
+		obsolete = yes
+	}
+create_equipment_variant = {
+		name = "Curtiss-Wright CW-14R"
+		type = pre_war_mr_equipment_1
+		upgrades = {
+			cw_14r_upgrade = 1 
+		}
+		obsolete = yes
+	}
+create_equipment_variant = {
+		name = "Curtiss A-8"
+		type = prewar_cas_equipment_1
+		upgrades = {
+			a8_shrike_upgrade = 1 
+		}
+		obsolete = yes
+	}
+create_equipment_variant = {
+		name = "Consolidated A-11"
+		type = prewar_cas_equipment_1
+		upgrades = {
+			a11_usa_upgrade = 1 
+		}
+		obsolete = yes
+	}
+create_equipment_variant = {
+		name = "Curtiss Falcon"
+		type = prewar_cas_equipment_1
+		upgrades = {
+			usa_curtisscyclone_upgrade = 1 
+		}
+		obsolete = yes
+	}
+create_equipment_variant = {
+		name = "Curtiss Falcon (B)"
+		type = prewar_cas_equipment_1
+		upgrades = {
+			usa_curtissfalcon_upgrade = 1 
+		}
+		obsolete = yes
+	}
+create_equipment_variant = {
+		name = "Keystone B-3A"
+		type = prewar_bomber_equipment_1
+		upgrades = {
+			b3a_keystone_upgrade = 1 
+		}
+		obsolete = yes
+	}
+create_equipment_variant = {
+		name = "Keystone B-4A"
+		type = prewar_bomber_equipment_1
+		upgrades = {
+			b4a_keystone_upgrade = 1 
+		}
+		obsolete = yes
+	}
+create_equipment_variant = {
+		name = "Keystone B-5A"
+		type = prewar_bomber_equipment_1
+		upgrades = {
+			b5a_keystone_upgrade = 1 
+		}
+		obsolete = yes
+	}
+create_equipment_variant = {
+		name = "Keystone B-6A"
+		type = prewar_bomber_equipment_1
+		upgrades = {
+			b6a_keystone_upgrade = 1 
+		}
+		obsolete = yes
+	}
+create_equipment_variant = {
+		name = "Douglas O-2MC-2"
+		type = prewar_cas_equipment_1
+		upgrades = {
+			o2mc_upgrade = 1 
+		}
+		obsolete = yes
+	}
+create_equipment_variant = {
+		name = "Douglas O-2MC-6"
+		type = prewar_cas_equipment_1
+		upgrades = {
+			o2mc3_upgrade = 1 
+		}
+		obsolete = yes
+	}
+create_equipment_variant = {
+		name = "Douglas O-2MC-4"
+		type = prewar_cas_equipment_1
+		upgrades = {
+			o2mc4_upgrade = 1 
+		}
+		obsolete = yes
+	}
+create_equipment_variant = {
+		name = "Douglas O-2MC-5"
+		type = prewar_cas_equipment_1
+		upgrades = {
+			o2mc5_upgrade = 1 
+		}
+		obsolete = yes
+	}
+create_equipment_variant = {
+		name = "Curtiss A-12"
+		type = prewar_cas_equipment_1
+		upgrades = {
+			a12_usa_upgrade = 1 
+		}
+		obsolete = yes
+	}
+create_equipment_variant = {
+		name = "Export Curtiss A-12"
+		type = prewar_cas_equipment_1
+		upgrades = {
+			export_a12_usa_upgrade = 1 
+		}
+		obsolete = yes
+	}
+create_equipment_variant = {
+		name = "Northrop Gamma 2E"
+		type = prewar_cas_equipment_1
+		upgrades = {
+			northrop_gamma_upgrade = 1 
+		}
+		obsolete = yes
+	}
+create_equipment_variant = {
+		name = "Martin B-12"
+		type = martin_b10_bomber_equipment_1
+		upgrades = {
+			engine_04_s2_upgrade = 1 
+			fuel_117_s10_upgrade = 1 
+		}
+		obsolete = yes
+	}
+create_equipment_variant = {
+		name = "Martin B-10B"
+		type = martin_b10_bomber_equipment_1
+		upgrades = {
+			engine_04_s2_upgrade = 1 
+			engine_08_s1_upgrade = 1 
+		}
+		obsolete = yes
+	}
+create_equipment_variant = {
+		name = "Martin 139WAN"
+		type = martin_b10_bomber_equipment_1
+		upgrades = {
+			engine_04_s2_upgrade = 1 
+			engine_08_s1_upgrade = 1 
+			fuel_117_s10_upgrade = 1
+		}
+		obsolete = yes
+	}
+create_equipment_variant = {
+		name = "Martin 139WC"
+		type = martin_b10_bomber_equipment_1
+		upgrades = {
+			engine_08_s1_upgrade = 1 
+			fuel_117_s10_upgrade = 1
+		}
+		obsolete = yes
+	}
+create_equipment_variant = {
+		name = "Martin 166"
+		type = martin_b10_bomber_equipment_1
+		upgrades = {
+			engine_04_s2_upgrade = 1 
+			engine_08_s1_upgrade = 1 
+			engine_06_s3_upgrade = 1 
+			fuel_117_s10_upgrade = 1
+		}
+		obsolete = yes
+	}
+create_equipment_variant = {
+		name = "Boeing P-26B"
+		type = usa_boeing_p26_equipment_1
+		upgrades = {
+			wing_stability_s1_upgrade = 1 
+			fuelinjection_ag10_s9_upgrade = 1
+		}
+		
+	}
+
+### Ship Variants ###
+#######################################################################################################################
+# Start of BICE variants - remember to vanilla variants.
+#######################################################################################################################
+create_equipment_variant = {
+	name = "Argonaut Class"
 	type = submarine_1
 	upgrades = {
-		ship_reliability_upgrade = 1
+		ship_quality_upgrade = 1
+		sub_engine_upgrade = 0
+		sub_stealth_upgrade = 1
+		sub_torpedo_upgrade = 1
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Narwhal Class"
+	type = submarine_1
+	upgrades = {
+		ship_quality_upgrade = 1
 		sub_engine_upgrade = 1
 		sub_stealth_upgrade = 1
 		sub_torpedo_upgrade = 1
 	}
 	obsolete = yes
 }
-
 create_equipment_variant = {
-	name = "Farragut Class"
-	type = destroyer_1
+	name = "Dolphin Class"
+	type = submarine_1
 	upgrades = {
-		ship_torpedo_upgrade = 3
-		destroyer_engine_upgrade = 3
-		ship_ASW_upgrade = 3
-		ship_anti_air_upgrade = 3
-	}
-}
-
-create_equipment_variant = {
-	name = "Portland Class"
-	type = heavy_cruiser_1
-	upgrades = {
-		ship_reliability_upgrade = 2
-		ship_engine_upgrade = 2
-		ship_armor_upgrade = 2
-		ship_gun_upgrade = 2
-	}
-}
-
-create_equipment_variant = {
-	name = "Pennsylvania Class"
-	type = battleship_1
-	upgrades = {
-		ship_reliability_upgrade = 1
-		ship_engine_upgrade = 1
-		ship_armor_upgrade = 1
-		ship_gun_upgrade = 1
+		ship_quality_upgrade = 1
+		sub_engine_upgrade = 1
+		sub_stealth_upgrade = 1
+		sub_torpedo_upgrade = 2
 	}
 	obsolete = yes
 }
-
 create_equipment_variant = {
-	name = "New Mexico Class"
-	type = battleship_1
+	name = "Cachalot Class"
+	type = submarine_1
 	upgrades = {
-		ship_reliability_upgrade = 2
-		ship_engine_upgrade = 2
-		ship_armor_upgrade = 2
-		ship_gun_upgrade = 2
+		ship_quality_upgrade = 1
+		sub_engine_upgrade = 1
+		sub_stealth_upgrade = 1
+		sub_torpedo_upgrade = 2
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "R Class"
+	type = submarine_1
+	upgrades = {
+		ship_quality_upgrade = 0
+		sub_engine_upgrade = 0
+		sub_stealth_upgrade = 0
+		sub_torpedo_upgrade = 0
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "O Class"
+	type = submarine_1
+	upgrades = {
+		ship_quality_upgrade = 0
+		sub_engine_upgrade = 0
+		sub_stealth_upgrade = 0
+		sub_torpedo_upgrade = 0
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Shark Class"
+	type = submarine_2
+	upgrades = {
+		ship_quality_upgrade = 1
+		sub_engine_upgrade = 1
+		sub_stealth_upgrade = 1
+		sub_torpedo_upgrade = 0
+	}
+	obsolete=yes
+}
+create_equipment_variant = {
+	name = "Barracuda Class"
+	type = submarine_1
+	upgrades = {
+		ship_quality_upgrade = 1
+		sub_engine_upgrade = 1
+		sub_stealth_upgrade = 1
+		sub_torpedo_upgrade = 1
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Perch Class"
+	type = submarine_2
+	upgrades = {
+		ship_quality_upgrade = 1
+		sub_engine_upgrade = 1
+		sub_stealth_upgrade = 1
+		sub_torpedo_upgrade = 0
 	}
 }
-
-create_equipment_variant = {
-	name = "Colorado Class"
-	type = battleship_1
-	upgrades = {
-		ship_reliability_upgrade = 3
-		ship_engine_upgrade = 3
-		ship_armor_upgrade = 3
-		ship_gun_upgrade = 4
-	}
-}
-
-create_equipment_variant = {
-	name = "Yorktown Class"
-	type = carrier_2
-	upgrades = {
-		ship_deckspace_upgrade = 1
-		carrier_armor_upgrade = 1
-		ship_engine_upgrade = 1
-		ship_reliability_upgrade = 1
-	}
-
-}
-
+####################################
+## End of VBNM classes
+####################################
 1939.1.1 = {
 	
 	create_equipment_variant = {
 		name = "Salmon Class"
 		type = submarine_2
 		upgrades = {
-			ship_reliability_upgrade = 1
+			ship_quality_upgrade = 1
 			sub_engine_upgrade = 1
 			sub_stealth_upgrade = 1
 			sub_torpedo_upgrade = 1
 		}
 	}
-
-	create_equipment_variant = {
-		name = "Benson & Gleaves Class"
-		type = destroyer_2
-		upgrades = {
-			ship_torpedo_upgrade = 3
-			destroyer_engine_upgrade = 3
-			ship_ASW_upgrade = 3
-			ship_anti_air_upgrade = 3
-		}
-	}
-
-	create_equipment_variant = {
-		name = "Wasp Class"
-		type = carrier_2
-		upgrades = {
-			ship_deckspace_upgrade = 2
-			carrier_armor_upgrade = 2
-			ship_engine_upgrade = 2
-			ship_reliability_upgrade = 2
-		}
-	}
-
-	create_equipment_variant = {
-		name = "F2A Buffalo"
-		type = cv_fighter_equipment_1
-		upgrades = {
-			cv_plane_gun_upgrade = 5
-			cv_plane_range_upgrade = 0
-			plane_engine_upgrade = 2
-			plane_reliability_upgrade = 5
-		}
-	}
-
-
-	# 1941
-	#create_equipment_variant = {
-	#	name = "South Dakota Class"
-	#	type = battleship_2
-	#	upgrades = {
-	#		ship_reliability_upgrade = 3
-	#		ship_engine_upgrade = 3
-	#		ship_armor_upgrade = 3
-	#		ship_gun_upgrade = 3
-	#	}
-	#}
 }
