@@ -1,133 +1,373 @@
 ﻿DOM = {
+	fleet_names_template = FLEET_NAME_USA									 
 	submarine = {
-		prefix = "ARD"
-		generic = { "Submarino" }
+		prefix = "A.R.D."
+		generic = { "Submarine" }
 		unique = {
-			"Presidente Trujillo" "Juan Pablo Duarte" "Pedro Santana" "Cristobal Colón" "Juan Alejandro Acosta" "Juan Bautista Cambiaso" "Gerardo Jansen" "Juan Bautista Maggiolo" 
 			#WIKI: Post S-boat, in order by hull designation, up to nuclear powered (excluding doubles)
-			"Barracuda" "Bass" "Bonita" "Argonaut" "Narwhal" "Nautilus" "Dolphin" "Cachalot" "Cuttlefish" "Porpoise" "Pike" "Shark" "Tarpon" "Perch" "Pickerel" "Permit" "Plunger" "Pollack" "Pompano" "Salmon" "Seal" 
-			"Skipjack" "Snapper" "Stingray" "Sturgeon" "Sargo" "Saury" "Spearfish" "Sculpin" "Sailfish" "Swordfish" "Seadragon" "Sealion" "Searaven" "Seawolf" 
-			"Tambor" "Tautog" "Thresher" "Triton" "Trout" "Tuna" "Mackerel" "Marlin" "Gar" "Grampus" "Grayback" "Grayling" "Grenadier" "Gudgeon" 
-			"Gato" "Greenling" "Grouper" "Growler" "Grunion" "Guardfish" "Albacore" "Amberjack" "Barb" "Blackfish" "Bluefish" "Bonefish" "Cod" "Cero" "Corvina" "Darter" "Drum" "Flying Fish" "Finback" "Haddock" "Halibut" 
-			"Herring" "Kingfish" "Shad" "Silversides" "Trigger" "Wahoo" "Whale" "Angler" "Bashaw" "Bluegill" "Bream" "Cavalla" "Cobia" "Croaker" "Dace" "Dorado" "Flasher" "Flier" "Flounder" "Gabilan" "Gunnel" "Gurnard" 
-			"Haddo" "Hake" "Harder" "Hoe" "Jack" "Lapon" "Mingo" "Muskallunge" "Paddle" "Pargo" "Peto" "Pogy" "Pompon" "Puffer" "Rasher" "Raton" "Ray" "Redfin" "Robalo" "Rock" "Runner" "Sawfish" "Scamp" "Scorpion" "Snook" 
-			"Steelhead" "Sunfish" "Tunny" "Tinosa" "Tullibee" 
-			"Balao" "Billfish" "Bowfin" "Cabrilla" "Capelin" "Cisco" "Crevalle" "Devilfish" "Dragonet" "Escolar" "Hackleback" "Lancetfish" "Ling" "Lionfish" "Manta" "Moray" "Roncador" "Sabalo" "Sablefish" "Seahorse" 
-			"Skate" "Tang" "Tilefish" "Apogon" "Aspro" "Batfish" "Archerfish" "Burrfish" "Barbel" "Barbero" "Baya" "Becuna" "Bergall" "Besugo" "Blackfin" "Caiman" "Blenny" "Blower" "Blueback" "Boarfish" "Charr" "Chub" 
-			"Brill" "Bugara" "Bullhead" "Bumper" "Cabezon" "Dentuda" "Capitaine" "Carbonero" "Carp" "Catfish" "Entemedor" "Chivo" "Chopper" "Clamagore" "Cobbler" "Cochino" "Corporal" "Cubera" "Cusk" "Diodon" "Dogfish" 
-			"Greenfish" "Halfbeak" "Dugong" "Eel" "Espada" "Jawfish" "Ono" "Garlopa" "Garrupa" "Goldring" "Golet" "Guavina" "Guitarro" "Hammerhead" "Hardhead" "Hawkbill" "Icefish" "Jallao" "Kete" "Kraken" "Lagarto" 
-			"Lamprey" "Lizardfish" "Loggerhead" "Macabi" "Mapiro" "Menhaden" "Mero" "Needlefish" "Nerka" "Sand Lance" "Picuda" "Pampanito" "Parche" "Bang" "Pilotfish" "Pintado" "Pipefish" "Piranha" "Plaice" "Pomfret" 
-			"Sterlet" "Queenfish" "Razorback" "Redfish" "Ronquil" "Scabbardfish" "Segundo" "Sea Cat" "Sea Devil" "Sea Dog" "Sea Fox" "Atule" "Spikefish" "Sea Owl" "Sea Poacher" "Sea Robin" "Sennet" "Piper" "Threadfin" 
-			"Spadefish" "Trepang" "Spot" "Springer" "Stickleback" "Tiru" 
-			"Tench" "Thornback" "Tigrone" "Tirante" "Trutta" "Toro" "Torsk" "Quillback" "Trumpetfish" "Tusk" "Turbot" "Ulua" "Unicorn" "Vendace" "Walrus" "Whitefish" "Whiting" "Wolffish" "Corsair" "Conger" "Cutlass" 
-			"Diablo" "Medregal" "Requin" "Irex" "Sea Leopard" "Odax" "Sirago" "Pomodon" "Remora" "Sarda" "Spinax" "Volador" "Comber" "Sea Panther" "Tiburon" "Kinn" "Springeren"
-		}
+            "Barracuda" "Bass" "Bonita" "Argonaut" "Narwhal" "Nautilus" "Dolphin" "Cachalot" "Cuttlefish" "Porpoise" "Pike" "Shark" "Tarpon" "Perch" "Pickerel" "Permit" "Plunger" "Pollack" "Pompano" "Salmon" "Seal"
+            "Skipjack" "Snapper" "Stingray" "Sturgeon" "Sargo" "Saury" "Spearfish" "Sculpin" "Sailfish" "Swordfish" "Seadragon" "Sealion" "Searaven" "Seawolf"
+            "Tambor" "Tautog" "Thresher" "Triton" "Trout" "Tuna" "Mackerel" "Marlin" "Gar" "Grampus" "Grayback" "Grayling" "Grenadier" "Gudgeon"
+            "Gato" "Greenling" "Grouper" "Growler" "Grunion" "Guardfish" "Albacore" "Amberjack" "Barb" "Blackfish" "Bluefish" "Bonefish" "Cod" "Cero" "Corvina" "Darter" "Drum" "Flying Fish" "Finback" "Haddock" "Halibut"
+            "Herring" "Kingfish" "Shad" "Silversides" "Trigger" "Wahoo" "Whale" "Angler" "Bashaw" "Bluegill" "Bream" "Cavalla" "Cobia" "Croaker" "Dace" "Dorado" "Flasher" "Flier" "Flounder" "Gabilan" "Gunnel" "Gurnard"
+            "Haddo" "Hake" "Harder" "Hoe" "Jack" "Lapon" "Mingo" "Muskallunge" "Paddle" "Pargo" "Peto" "Pogy" "Pompon" "Puffer" "Rasher" "Raton" "Ray" "Redfin" "Robalo" "Rock" "Runner" "Sawfish" "Scamp" "Scorpion" "Snook"
+            "Steelhead" "Sunfish" "Tunny" "Tinosa" "Tullibee"
+            "Balao" "Billfish" "Bowfin" "Cabrilla" "Capelin" "Cisco" "Crevalle" "Devilfish" "Dragonet" "Escolar" "Hackleback" "Lancetfish" "Ling" "Lionfish" "Manta" "Moray" "Roncador" "Sabalo" "Sablefish" "Seahorse"
+            "Skate" "Tang" "Tilefish" "Apogon" "Aspro" "Batfish" "Archerfish" "Burrfish" "Barbel" "Barbero" "Baya" "Becuna" "Bergall" "Besugo" "Blackfin" "Caiman" "Blenny" "Blower" "Blueback" "Boarfish" "Charr" "Chub"
+            "Brill" "Bugara" "Bullhead" "Bumper" "Cabezon" "Dentuda" "Capitaine" "Carbonero" "Carp" "Catfish" "Entemedor" "Chivo" "Chopper" "Clamagore" "Cobbler" "Cochino" "Corporal" "Cubera" "Cusk" "Diodon" "Dogfish"
+            "Greenfish" "Halfbeak" "Dugong" "Eel" "Espada" "Jawfish" "Ono" "Garlopa" "Garrupa" "Goldring" "Golet" "Guavina" "Guitarro" "Hammerhead" "Hardhead" "Hawkbill" "Icefish" "Jallao" "Kete" "Kraken" "Lagarto"
+            "Lamprey" "Lizardfish" "Loggerhead" "Macabi" "Mapiro" "Menhaden" "Mero" "Needlefish" "Nerka" "Sand Lance" "Picuda" "Pampanito" "Parche" "Bang" "Pilotfish" "Pintado" "Pipefish" "Piranha" "Plaice" "Pomfret"
+            "Sterlet" "Queenfish" "Razorback" "Redfish" "Ronquil" "Scabbardfish" "Segundo" "Sea Cat" "Sea Devil" "Sea Dog" "Sea Fox" "Atule" "Spikefish" "Sea Owl" "Sea Poacher" "Sea Robin" "Sennet" "Piper" "Threadfin"
+            "Spadefish" "Trepang" "Spot" "Springer" "Stickleback" "Tiru"
+            "Tench" "Thornback" "Tigrone" "Tirante" "Trutta" "Toro" "Torsk" "Quillback" "Trumpetfish" "Tusk" "Turbot" "Ulua" "Unicorn" "Vendace" "Walrus" "Whitefish" "Whiting" "Wolffish" "Corsair" "Conger" "Cutlass"
+            "Diablo" "Medregal" "Requin" "Irex" "Sea Leopard" "Odax" "Sirago" "Pomodon" "Remora" "Sarda" "Spinax" "Volador" "Comber" "Sea Panther" "Tiburon" "Kinn" "Springeren"
+        }
 	}
-	destroyer = {
-		prefix = "ARD"
-		generic = { 
-			"Destructor"
-		}
-		unique = {
-			"Presidente Trujillo" "Juan Pablo Duarte" "Pedro Santana" "Cristobal Colón" "Juan Alejandro Acosta" "Juan Bautista Cambiaso" "Gerardo Jansen" "Juan Bautista Maggiolo" 
-			# From wiki, Farragut class and beyond by flag number.  
-			"Farragut" "Dewey" "Hull" "Macdonough" "Worden" "Dale" "Monaghan" "Aylwin" "Porter" "Selfridge" "McDougal" "Winslow" "Phelps" "Clark" "Moffett" "Balch" 
-			"Mahan" "Cummings" "Drayton" "Lamson" "Flusser" "Reid" "Case" "Conyngham" "Cassin" "Shaw" "Tucker" "Downes" "Cushing" "Perkins" "Smith" "Preston" 
-			"Gridley" "Somers" "Craven" "Warrington" "Dunlap" "Fanning" "Bagley" "Blue" "Helm" "Mugford" "Ralph Talbot" "Henley" "Patterson" "Jarvis" "Sampson" "Davis" "Jouett" 
-			"Benham" "Ellet" "Lang" "McCall" "Maury" "Mayrant" "Trippe" "Rhind" "Rowan" "Stack" "Sterett" "Wilson" "Sims" "Hughes" "Anderson" "Hammann" "Mustin" "Russell" "O Brien" "Walke" "Morris" "Roe" "Wainwright" "Buck" 
-			"Benson" "Mayo" "Gleaves" "Niblack" "Madison" "Lansdale" "Hilary P Jones" "Charles F Hughes" "Livermore" "Eberle" "Plunkett" "Kearny" "Gwin" "Meredith" "Grayson" "Monssen" "Woolsey" "Ludlow" "Edison" 
-			"Ericsson" "Wilkes" "Nicholson" "Swanson" "Ingraham" "Fletcher" "Radford" "Jenkins" "O Bannon" "Chevalier" "Bristol" "Ellyson" "Hambleton" "Rodman" "Emmons" "Macomb" "Laffey" "Woodworth" "Forrest" 
-			"Fitch" "Corry" "Hobson" "Saufley" "Waller" "Strong" "Taylor" "De Haven" "Bache" "Beale" "Guest" "Bennett" "Fullam" "Hudson" "Hutchins" "Pringle" "Stanly" "Stevens" "Halford" "Leutze" "Aaron Ward" "Buchanan" 
-			"Duncan" "Lansdowne" "Lardner" "McCalla" "Mervine" "Quick" "Farenholt" "Bailey" "Carmick" "Doyle" "Endicott" "McCook" "Frankford" "Philip" "Renshaw" "Ringgold" "Schroeder" "Sigsbee" 
-			"Conway" "Cony" "Converse" "Eaton" "Foote" "Spence" "Terry" "Thatcher" "Anthony" "Wadsworth" "Walker" "Brownson" "Daly" "Isherwood" "Kimberly" "Luce" 
-			"Abner Read" "Ammen" "Bush" "Trathen" "Hazelwood" "Heermann" "Hoel" "McCord" "Miller" "Owen" "The Sullivans" "Stephen Potter" "Tingey" "Twining" "Yarnall" "Boyd" "Bradford" "Brown" 
-			"Cowell" "Capps" "David W Taylor" "Evans" "John D Henley" "Franks" "Haggard" "Hailey" "Johnston" "Laws" "Longshaw" "Morrison" "Prichett" "Robinson" "Ross" "Rowe" "Smalley" "Stoddard" "Watts" "Wren" 
-			"Aulick" "Charles Ausburne" "Claxton" "Dyson" "Harrison" "John Rodgers" "McKee" "Murray" "Sproston" "Wickes" "William D Porter" "Young" "Charrette" "Conner" "Hall" "Halligan" "Haraden" "Newcomb" "Bell" "Burns" 
-			"Izard" "Paul Hamilton" "Twiggs" "Howorth" "Killen" "Hart" "Metcalf" "Shields" "Wiley" "Bancroft" "Barton" "Boyle" "Champlin" "Meade" "Murphy" "Parker" "Caldwell" "Coghlan" "Frazier" "Gansevoort" "Gillespie" 
-			"Hobby" "Kalk" "Kendrick" "Laub" "MacKenzie" "McLanahan" "Nields" "Ordronaux" "Davison" "Glennon" "Jeffers" "Maddox" "Nelson" "Baldwin" "Harding" "Satterlee" "Thompson" "Welles" "Abbot" "Braine" "Erben" 
-			"Cowie" "Knight" "Doran" "Earle" "Butler" "Gherardi" "Herndon" "Shubrick" "Beatty" "Tillman" "Hale" "Sigourney" "Stembel" "Stevenson" "Stockton" "Thorn" "Turner" "Albert W Grant" "Caperton" "Cogswell" 
-			"Ingersoll" "Knapp" "Bearss" "John Hood" "Van Valkenburgh" "Charles J Badger" "Colahan" "Dashiell" "Bullard" "Kidd" "Bennion" "Heywood L Edwards" "Richard P Leary" "Bryant" "Black" "Chauncey" 
-			"Clarence K Bronson" "Cotten" "Dortch" "Gatling" "Healy" "Hickox" "Hunt" "Lewis Hancock" "Marshall" "McDermut" "McGowan" "McNair" "Melvin" "Hopewell" "Porterfield" "Stockham" "Wedderburn" "Picking" 
-			"Halsey Powell" "Uhlmann" "Remey" "Wadleigh" "Norman Scott" "Mertz" "Allen M Sumner" "Moale" "Ingraham" "Cooper" "English" "Charles S Sperry" "Ault" "Waldron" "Haynsworth" 
-			"John W Weeks" "Hank" "Wallace L Lind" "Borie" "Compton" "Gainard" "Soley" "Harlan R Dickson" "Hugh Purvis" "Gearing" "Eugene A Greene" "Gyatt" "Kenneth D Bailey" "William R Rush" "William M Wood" "Wiltsie" 
-			"Theodore E Chandler" "Hamner" "Epperson" "Mansfield" "Lyman K Swenson" "Collett" "Hyman" "Mannert L Abele" "Purdy" "Robert H Smith" "Thomas E Fraser" "Shannon" "Harry F Bauer" "Adams" "Tolman" 
-			"Drexler" "Frank Knox" "Southerland" "Brush" "Taussig" "Samuel N Moore" "Harry E Hubbard" "Henry A Wiley" "Shea" "J William Ditter" "Alfred A Cunningham" "John R Pierce" "Frank E Evans" "John A Bole" 
-			"Putnam" "Lofberg" "John W Thomason" "William C Lawe" "Lloyd Thomas" "Keppler" "Seymour D Owens" "Lowry" "Lindsey" "Hugh W Hadley" "Willard Keith" "James C Owens" "Zellars" "Massey" "Douglas H Fox" "Stormes" 
-			"Robert K Huntington" "Gurke" "McKean" "Henderson" "Richard B Anderson" "James E Kyes" "Hollister" "Eversole" "Shelton" "Seaman" "Callaghan" "Cassin Young" "Irwin" "Colhoun" "Gregory" "Little" "Rooks" 
-			"Higbee" "Benner" "Dennis J Buckley" "New" "Holder" "Rich" "Robert H McCard" "Samuel B Roberts" "Basilone" "Carpenter" "Agerholm" "Robert A Owens" "Timmerman" "Myles C Fox" "Everett F Larson" "Goodrich" 
-			"Hanson" "Herbert J Thomas" "Charles P Cecil" "George K MacKenzie" "Sarsfield" "Ernest G Small" "Power" "Fiske" "Bausell" "Ozbourn" "Robert L Wilson" "Witek" "Richard E Kraus" "Joseph P Kennedy Jr" 
-			"Rupertus" "Leonard F Mason" "Charles H Roan" "Fred T Berry" "Norris" "McCaffery" "Harwood" "Vogelgesang" "Steinaker" "Harold J Ellison" "Charles R Ware" "Cone" "Stribling" "Arnold J Isbell" "Fechteler" 
-			"Damato" "Forrest Royal" "Hawkins" "Henry W Tucker" "Rogers" "Vesole" "Leary" "Dyess" "Bordelon" "Furse" "Newman K Perry" "Floyd B Parks" "John R Craig" "Orleck" "Brinkley Bass" "Stickell" "O'Hare"
-			"Mitscher" "John S McCain" "Willis A Lee" "Wilkinson" "Forrest Sherman" "John Paul Jones" "Barry" "Decatur" "Jonas Ingram" "Manley" "Du Pont" "Bigelow" "Blandy" "Mullinnix" "Edson"
-			"Morton" "Parsons" "Richard S Edwards" "Turner Joy" "Charles F Adams" "John King" "Lawrence" "Biddle" "Barney" "Henry B Wilson " "Lynde McCormick" "Towers" 
-		}
-	}
-	light_cruiser = {
-		prefix = "ARD"
-		generic = { "Crucero Ligero" }
-		unique = {
-			"El Benefactor" "Santo Domingo" "Santiago" "San Pedro" "La Romana" 
-			# From Wiki (Built/Served/Fought) 
-			"Omaha" "Milwaukee" "Cincinnati" "Raleigh" "Detroit" "Richmond" "Concord" "Trenton" "Marblehead" "Memphis" "Brooklyn" "Philadelphia" "Savannah" "Nashville" "Phoenix" "Boise" "Honolulu" 
-			"St. Louis" "Helena" "Atlanta" "Juneau" "San Diego" "San Juan" "Cleveland"	"Columbia" "Montpelier" "Denver" "Santa Fe" "Birmingham" "Mobile" "Vincennes" "Pasadena" "Springfield" 
-			"Topeka" "Biloxi" "Houston" "Providence" "Manchester" "Vicksburg" "Duluth" "Miami" "Astoria" "Oklahoma City" "Little Rock" "Galveston" "Oakland" "Reno" "Flint" "Tucson" 
-			"Amsterdam" "Portsmouth" "Wilkes-Barre" "Dayton" "Fargo" "Huntington" "Spokane" "Fresno" 
-			# From Wiki  (Unfinished/Cancelled/Converted before completion)
-			"Newark" "New Haven" "Buffalo" "Wilmington" "Vallejo" "Roanoke" "Tallahassee" "Cheyenne" "Chattanooga" "Worcester" "Gary" "Providence" "Portsmouth" 
-		}
-	}
-	heavy_cruiser = {
-		prefix = "ARD"
-		generic = { "Crucero Pesado" }
-		unique = {
-			"El Benefactor" "Santo Domingo" "Santiago" "San Pedro" "La Romana" 
-			"Pensacola" "Salt Lake City" "Northampton" "Chester" "Louisville" "Chicago" "Houston" "Augusta" 
-			"New Orleans" "Portland" "Astoria" "Indianapolis" "Minneapolis" "Tuscaloosa" "San Francisco" "Quincy" "Vincennes" "Wichita" 
-			"Baltimore" "Boston" "Canberra" "Pittsburgh" "St. Paul" "Columbus" "Helena" "Bremerton" "Fall River" "Macon" "Toledo" "Los Angeles" 
-			"Oregon City" "Albany" "Rochester" "Des Moines" "Salem" "Worcester" "Roanoke" "Newport News" 
-			# From Wiki  (Unfinished/Cancelled/Converted before completion)
-			"Cambridge" "Bridgeport" "Kansas City" "Tulsa" "Norfolk" "Scranton" "Dallas" "Vallejo" "Gary" 
-		}
-	}
-	battle_cruiser = {
-		prefix = "ARD"
-		generic = { "Crucero de Batalla" }
-		unique = {
-			"Don Rafél Trujillo" "Eleonora Trujillo" "Jose Pacheco"
-			#wiki: Historic list of Alaska Class
-			"Alaska" "Guam" "Hawaii" "Philippines" "Puerto Rico" "Samoa" "Virgin Islands"  
-			#Additional US Territories/Districts during WW2 era
-			"District of Columbia" "Panama Canal" "Wake Island" "Midway Island" "Johnston Atoll" "Palmyra Island" "Baker Island" "Howland Island" "Jarvis Island"
-		}
-	}
-	battleship = {
-		prefix = "ARD"
-		generic = { "Acorazado" }
-		unique = {
-			"Don Rafél Trujillo" "Eleonora Trujillo" "Jose Pacheco"
-			# From Wiki (Served)
-			"Arkansas" "New York" "Texas" "Nevada" "Oklahoma" "Pennsylvania" "Arizona" "New Mexico" "Mississippi" "Idaho" "Tennessee" "California" "Colorado" "Maryland" "West Virginia" 
-			"North Carolina" "Washington" "South Dakota" "Indiana" "Massachusetts" "Alabama" "Iowa" "New Jersey" "Missouri" "Wisconsin" "Illinois" "Kentucky"   
-			# From Wiki (never completed)
-			"Montana" "Ohio" "Maine" "New Hampshire" "Louisiana" "South Carolina" 
-			# Older/Other state names
-			"Minnesota" "North Dakota" "Oregon" "Connecticut" "Vermont" "New Hampshire" "Florida" "Utah" "Delaware" "Michigan" "Kansas" "Rhode Island" "Nebraska" "Virginia"
-			# Training ship, historically
-			"Wyoming"   
-		}
-	}
-	carrier = {
-		prefix = "ARD"
-		generic = { "Portaaviones" }
-		unique = {
-			"República Dominicana" "Isla Catalina" "Yaque del Norte" "Lago Enriquillo" 
-			"Lexington" "Saratoga" "Ranger" "Yorktown" "Enterprise" "Wasp" "Hornet" 
-			"Essex" "Intrepid" "Franklin" "Ticonderoga" "Randolph" "Bunker Hill" "Hancock" "Bennington" "Boxer" "Bon Homme Richard" "Shangri-la" "Lake Champlain" "Tarawa" "Antietam" 
-			"Midway" "Franklin D Roosevelt" "Leyte"	"Kearsarge"	"Valley Forge" "Philippine Sea" "Coral Sea" "Oriskany" 		
-			# CVL Names
-			"Independence" "Princeton" "Belleau Wood" "Cowpens" "Monterey" "Cabot" "Bataan" "San Jacinto" "Saipan" "Wright" 
-			# Cold War and Beyond  (WW2 era Gen/Adm names excluded)
-			"United States" "Forrestal" "Kitty Hawk" "Constellation" "America" "Theodore Roosevelt" "Abraham Lincoln" "George Washington"
+	USA_destroyer_1e = {
+				
+        generic = { "Porter Class DD" }
+			   
+   
+        unique = {
+            "DD-356 A.R.D. Porter" "DD-357 A.R.D. Selfridge" "DD-358 A.R.D. McDougal" "DD-359 A.R.D. Winslow" "DD-360 A.R.D. Phelps" "DD-361 A.R.D. Clark" "DD-362 A.R.D. Moffett" "DD-363 A.R.D. Balch"
+            }
+    }
+    USA_destroyer_1f = {
+        generic = { "Mahan Class DD" }
+        unique = {
+            "DD-364 A.R.D. Mahan" "DD-365 A.R.D. Cummings" "DD-366 A.R.D. Drayton" "DD-367 A.R.D. Lamson" "DD-368 A.R.D. Flusser" "DD-369 A.R.D. Reid" "DD-370 A.R.D. Case" "DD-371 A.R.D. Conyngham"
+            "DD-372 A.R.D. Cassin" "DD-373 A.R.D. Shaw" "DD-374 A.R.D. Tucker" "DD-375 A.R.D. Downes" "DD-376 A.R.D. Cushing" "DD-377 A.R.D. Perkins" "DD-378 A.R.D. Smith" "DD-379 A.R.D. Preston"
+            "DD-384 A.R.D. Dunlap" "DD-385 A.R.D. Fanning"
+            }
+    }
+    USA_destroyer_1g = {
+        generic = { "Gridley Class DD" }
+        unique = {
+            "DD-380 A.R.D. Gridley" "DD-382 A.R.D. Craven" "DD-400 A.R.D. McCall" "DD-401 A.R.D. Maury"
+            }
+    }
+    USA_destroyer_1h = {
+        generic = { "Bagley Class DD" }
+        unique = {
+            "DD-386 A.R.D. Bagley" "DD-387 A.R.D. Blue" "DD-388 A.R.D. Helm" "DD-389 A.R.D. Mugford" "DD-390 A.R.D. Ralph Talbot" "DD-391 A.R.D. Henley" "DD-392 A.R.D. Patterson" "DD-393 A.R.D. Jarvis"
+            }
+    }
+    USA_destroyer_1i = {
+        generic = { "Somers Class DD" }
+        unique = {
+            "DD-381 A.R.D. Somers" "DD-383 A.R.D. Warrington" "DD-394 A.R.D. Sampson" "DD-395 A.R.D. Davis" "DD-396 A.R.D. Jouett"
+            }
+    }
+    USA_destroyer_1j = {
+        generic = { "Benham Class DD" }
+        unique = {
+            "DD-397 A.R.D. Benham" "DD-398 A.R.D. Ellet" "DD-399 A.R.D. Lang" "DD-402 A.R.D. Mayrant" "DD-403 A.R.D. Trippe" "DD-404 A.R.D. Rhind" "DD-405 A.R.D. Rowan" "DD-406 A.R.D. Stack"
+            "DD-407 A.R.D. Sterett" "DD-408 A.R.D. Wilson"
+            }
+    }
+    USA_destroyer_2 = {
+        generic = { "Sims Class DD" }
+        unique = {
+            "DD-409 A.R.D. Sims" "DD-410 A.R.D. Hughes" "DD-411 A.R.D. Anderson" "DD-412 A.R.D. Hammann" "DD-413 A.R.D. Mustin" "DD-414 A.R.D. Russell" "DD-415 A.R.D. O'Brien" "DD-416 A.R.D. Walke"
+            "DD-417 A.R.D. Morris" "DD-418 A.R.D. Roe" "DD-419 A.R.D. Wainwright" "DD-420 A.R.D. Buck"
+            }
+    }
+    USA_destroyer_2b = {
+        generic = { "Benson Class DD" }
+        unique = {
+            "DD-421 A.R.D. Benson" "DD-422 A.R.D. Mayo" "DD-425 A.R.D. Madison" "DD-426 A.R.D. Lansdale" "DD-427 A.R.D. Hilary P. Jones" "DD-428 A.R.D. Charles F. Hughes" "DD-459 A.R.D. Laffey" "DD-460 A.R.D. Woodworth"
+            "DD-491 A.R.D. Farenholt" "DD-492 A.R.D. Bailey" "DD-598 A.R.D. Bancroft" "DD-599 A.R.D. Barton" "DD-600 A.R.D. Boyle" "DD-601 A.R.D. Champlin" "DD-602 A.R.D. Meade" "DD-603 A.R.D. Murphy"
+            "DD-604 A.R.D. Parker" "DD-605 A.R.D. Caldwell" "DD-606 A.R.D. Coghlan" "DD-607 A.R.D. Frazier" "DD-608 A.R.D. Gansevoort" "DD-609 A.R.D. Gillespie" "DD-610 A.R.D. Hobby" "DD-611 A.R.D. Kalk"
+            "DD-612 A.R.D. Kendrick" "DD-613 A.R.D. Laub" "DD-614 A.R.D. McKenzie" "DD-615 A.R.D. McLanahan" "DD-616 A.R.D. Nields" "DD-617 A.R.D. Ordronaux"
+            }
+    }
+    USA_destroyer_2c = {
+        generic = { "Gleaves Class DD" }
+        unique = {
+            #Includes Bristol subclass
+            "DD-423 A.R.D. Gleaves" "DD-424 A.R.D. Niblack" "DD-429 A.R.D. Livermore" "DD-430 A.R.D. Eberle" "DD-431 A.R.D. Plunkett" "DD-432 A.R.D. Kearny" "DD-433 A.R.D. Gwin" "DD-434 A.R.D. Meredith"
+            "DD-435 A.R.D. Grayson" "DD-436 A.R.D. Monssen" "DD-437 A.R.D. Wollsey" "DD-438 A.R.D. Ludlow" "DD-439 A.R.D. Edison" "DD-440 A.R.D. Ericsson" "DD-441 A.R.D. Wilkes" "DD-442 A.R.D. Nicholson"
+            "DD-443 A.R.D. Swanson" "DD-444 A.R.D. Ingraham" "DD-453 A.R.D. Bristol" "DD-454 A.R.D. Ellyson" "DD-455 A.R.D. Hambleton" "DD-456 A.R.D. Rodman" "DD-457 A.R.D. Emmons" "DD-458 A.R.D. Macomb"
+            "DD-461 A.R.D. Forrest" "DD-462 A.R.D. Fitch" "DD-463 A.R.D. Corr" "DD-464 A.R.D. Hobson" "DD-483 A.R.D. Aaron Ward" "DD-484 A.R.D. Buchanan" "DD-485 A.R.D. Duncan" "DD-486 A.R.D. Landsdowne"
+            "DD-487 A.R.D. Lardner" "DD-488 A.R.D. McCalla" "DD-489 A.R.D. Mervine" "DD-490 A.R.D. Quick" "DD-493 A.R.D. Carmick" "DD-494 A.R.D. Doyle" "DD-495 A.R.D. Endicott" "DD-496 A.R.D. McCook"
+            "DD-497 A.R.D. Frankford" "DD-618 A.R.D. Davison" "DD-619 A.R.D. Edwards" "DD-620 A.R.D. Glennon" "DD-621 A.R.D. Jeffers" "DD-622 A.R.D. Maddox" "DD-623 A.R.D. Nelson" "DD-624 A.R.D. Baldwin"
+            "DD-625 A.R.D. Harding" "DD-626 A.R.D. Satterlee" "DD-627 A.R.D. Thompson" "DD-628 A.R.D. Welles" "DD-632 A.R.D. Cowie" "DD-633 A.R.D. Knight" "DD-634 A.R.D. Doran" "DD-635 A.R.D. Earle"
+            "DD-636 A.R.D. Butler" "DD-637 A.R.D. Gherardi" "DD-638 A.R.D. Herndon" "DD-639 A.R.D. Shubrick" "DD-640 A.R.D. Beatty" "DD-641 A.R.D. Tillman" "DD-645 A.R.D. Stevenson" "DD-646 A.R.D. Stockton"
+            "DD-647 A.R.D. Thorn" "DD-648 A.R.D. Turner"
+            }
+    }
+    USA_destroyer_3 = {
+        generic = { "Fletcher Class DD" }
+        unique = {
+            #DDs 503-505, 523-525, 542, 543, 548, 549 named for historic Navy Admirals and Commodores
+            "DD-445 A.R.D. Fletcher" "DD-446 A.R.D. Radford" "DD-447 A.R.D. Jenkins" "DD-448 A.R.D. La Vallette" "DD-449 A.R.D. Nicholas" "DD-450 A.R.D. O'Bannon" "DD-451 A.R.D. Chevalier" "DD-465 A.R.D. Saufley"
+            "DD-466 A.R.D. Waller" "DD-467 A.R.D. Strong" "DD-468 A.R.D. Taylor" "DD-469 A.R.D. De Haven" "DD-470 A.R.D. Bache" "DD-471 A.R.D. Beale" "DD-472 A.R.D. Guest" "DD-473 A.R.D. Bennett"
+            "DD-474 A.R.D. Fullam" "DD-475 A.R.D. Hudson" "DD-476 A.R.D. Hutchins" "DD-477 A.R.D. Pringle" "DD-478 A.R.D. Stanly" "DD-479 A.R.D. Stevens" "DD-480 A.R.D. Halford" "DD-481 A.R.D. Leutze"
+            "DD-482 A.R.D. Watson" "DD-498 A.R.D. Philip" "DD-499 A.R.D. Renshaw" "DD-500 A.R.D. Ringgold" "DD-501 A.R.D. Schroeder" "DD-502 A.R.D. Sigsbee" "DD-503 A.R.D. Crowninshield" "DD-504 A.R.D. Magruder"
+            "DD-505 A.R.D. Ramsay" "DD-506 A.R.D. Turner" "DD-507 A.R.D. Conway" "DD-508 A.R.D. Cony" "DD-509 A.R.D. Converse" "DD-510 A.R.D. Eaton" "DD-511 A.R.D. Foote" "DD-512 A.R.D. Spence"
+            "DD-513 A.R.D. Terry" "DD-514 A.R.D. Thatcher" "DD-515 A.R.D. Anthony" "DD-516 A.R.D. Wadsworth" "DD-517 A.R.D. Walker" "DD-518 A.R.D. Brownson" "DD-519 A.R.D. Daly" "DD-520 A.R.D. Isherwood"
+            "DD-521 A.R.D. Kimberly" "DD-522 A.R.D. Luce" "DD-523 A.R.D. Burrows" "DD-524 A.R.D. Shock" "DD-525 A.R.D. Hartt" "DD-526 A.R.D. Abner Read" "DD-527 A.R.D. Ammen" "DD-528 A.R.D. Mullany"
+            "DD-529 A.R.D. Bush" "DD-530 A.R.D. Trathen" "DD-531 A.R.D. Hazelwood" "DD-532 A.R.D. Heermann" "DD-533 A.R.D. Hoel" "DD-534 A.R.D. McCord" "DD-535 A.R.D. Miller" "DD-536 A.R.D. Owen"
+            "DD-537 A.R.D. The Sullivans" "DD-538 A.R.D. Stephen Potter" "DD-539 A.R.D. Tingey" "DD-540 A.R.D. Twining" "DD-541 A.R.D. Yarnall" "DD-542 A.R.D. William Jones" "DD-543 A.R.D. Farquhar" "DD-544 A.R.D. Boyd"
+            "DD-545 A.R.D. Bradford" "DD-546 A.R.D. Brown" "DD-547 A.R.D. Cowell" "DD-548 A.R.D. O'Neil" "DD-549 A.R.D. McAdoo" "DD-550 A.R.D. Capps" "DD-551 A.R.D. David W. Taylor" "DD-552 A.R.D. Evans"
+            "DD-553 A.R.D. John D. Henley" "DD-554 A.R.D. Franks" "DD-555 A.R.D. Haggard" "DD-556 A.R.D. Hailey" "DD-557 A.R.D. Johnston" "DD-558 A.R.D. Laws" "DD-559 A.R.D. Longshaw" "DD-560 A.R.D. Morrison"
+            "DD-561 A.R.D. Prichett" "DD-562 A.R.D. Robinson" "DD-563 A.R.D. Ross" "DD-564 A.R.D. Rowe" "DD-565 A.R.D. Smalley" "DD-566 A.R.D. Stoddard" "DD-567 A.R.D. Watts" "DD-568 A.R.D. Wren"
+            "DD-569 A.R.D. Aulick" "DD-570 A.R.D. Charles Ausburne" "DD-571 A.R.D. Claxton" "DD-572 A.R.D. Dyson" "DD-573 A.R.D. Harrison" "DD-574 A.R.D. John Rodgers" "DD-575 A.R.D. McKee" "DD-576 A.R.D. Murray"
+            "DD-577 A.R.D. Sproston" "DD-578 A.R.D. Wickes" "DD-579 A.R.D. William D. Porter" "DD-580 A.R.D. Young" "DD-581 A.R.D. Charrette" "DD-582 A.R.D. Conner" "DD-583 A.R.D. Hall" "DD-584 A.R.D. Halligan"
+            "DD-585 A.R.D. Haraden" "DD-586 A.R.D. Newcomb" "DD-587 A.R.D. Bell" "DD-588 A.R.D. Burns" "DD-589 A.R.D. Izard" "DD-590 A.R.D. Paul Hamilton" "DD-591 A.R.D. Twiggs" "DD-592 A.R.D. Howorth"
+            "DD-593 A.R.D. Killen" "DD-594 A.R.D. Hart" "DD-595 A.R.D. Metcalf" "DD-596 A.R.D. Shields" "DD-597 A.R.D. Wiley" "DD-629 A.R.D. Abbot" "DD-630 A.R.D. Braine" "DD-631 A.R.D. Erben"
+            "DD-642 A.R.D. Hale" "DD-643 A.R.D. Sigourney" "DD-644 A.R.D. Stembel" "DD-649 A.R.D. Abel W. Grant" "DD-650 A.R.D. Caperton" "DD-651 A.R.D. Cogswell" "DD-652 A.R.D. Ingersoll" "DD-653 A.R.D. Knapp"
+            "DD-654 A.R.D. Bearss" "DD-655 A.R.D. John Hood" "DD-656 A.R.D. Van Valkenburgh" "DD-657 A.R.D. Charles J. Badger" "DD-658 A.R.D. Colahan" "DD-659 A.R.D. Dashiell" "DD-660 A.R.D. Bullard" "DD-661 A.R.D. Kidd"
+            "DD-662 A.R.D. Bennion" "DD-663 A.R.D. Heywood L. Edwards" "DD-664 A.R.D. Richard P. Leary" "DD-665 A.R.D. Bryant" "DD-666 A.R.D. Black" "DD-667 A.R.D. Chauncey" "DD-668 A.R.D. Clarence K. Bronson" "DD-669 A.R.D. Cotten"
+            "DD-670 A.R.D. Dortch" "DD-671 A.R.D. Gatling" "DD-672 A.R.D. Healy" "DD-673 A.R.D. Hickox" "DD-674 A.R.D. Hunt" "DD-675 A.R.D. Lewis Hancock" "DD-676 A.R.D. Marshall" "DD-677 A.R.D. McDermut"
+            "DD-678 A.R.D. McGowan" "DD-679 A.R.D. McNair" "DD-680 A.R.D. Melvin" "DD-681 A.R.D. Hopewell" "DD-682 A.R.D. Porterfield" "DD-683 A.R.D. Stockham" "DD-684 A.R.D. Wedderburn" "DD-685 A.R.D. Picking"
+            "DD-686 A.R.D. Halsey Powell" "DD-687 A.R.D. Uhlmann" "DD-688 A.R.D. Remey" "DD-689 A.R.D. Wadleigh" "DD-690 A.R.D. Norman Scott" "DD-691 A.R.D. Mertz" "DD-792 A.R.D. Callaghan" "DD-793 A.R.D. Cassin Young"
+            "DD-794 A.R.D. Irwin" "DD-795 A.R.D. Preston" "DD-796 A.R.D. Benham" "DD-797 A.R.D. Cushing" "DD-798 A.R.D. Monssen" "DD-799 A.R.D. Jarvis" "DD-800 A.R.D. Porter" "DD-801 A.R.D. Colhoun"
+            "DD-802 A.R.D. Gregory" "DD-803 A.R.D. Little" "DD-804 A.R.D. Rooks"
+            }
+    }
+    USA_destroyer_4 = {
+        generic = { "Allen M. Sumner Class DD" }
+        unique = {
+            "DD-692 A.R.D. Allen M. Sumner" "DD-693 A.R.D. Moale" "DD-694 A.R.D. Ingraham" "DD-695 A.R.D. Cooper" "DD-696 A.R.D. English" "DD-697 A.R.D. Charles S. Sperry" "DD-698 A.R.D. Ault" "DD-699 A.R.D. Waldron"
+            "DD-700 A.R.D. Haynsworth" "DD-701 A.R.D. John W. Weeks" "DD-702 A.R.D. Hank" "DD-703 A.R.D. Wallace L. Lind" "DD-704 A.R.D. Borie" "DD-705 A.R.D. Compton" "DD-706 A.R.D. Gainard" "DD-707 A.R.D. Soley"
+            "DD-708 A.R.D. Harlan R. Dickson" "DD-709 A.R.D. Hugh Purvis" "DD-722 A.R.D. Barton" "DD-723 A.R.D. Walke" "DD-724 A.R.D. Laffey" "DD-725 A.R.D. O'Brien" "DD-726 A.R.D. Meredith" "DD-727 A.R.D. De Haven"
+            "DD-728 A.R.D. Mansfield" "DD-729 A.R.D. Lyman K. Swenson" "DD-730 A.R.D. Collett" "DD-731 A.R.D. Maddox" "DD-732 A.R.D. Hyman" "DD-733 A.R.D. Mannert L. Abele" "DD-734 A.R.D. Purdy" "DD-741 A.R.D. Drexler"
+            "DD-744 A.R.D. Blue" "DD-745 A.R.D. Brush" "DD-746 A.R.D. Taussig" "DD-747 A.R.D. Samuel N. Moore" "DD-748 A.R.D. Harry E. Hubbard" "DD-752 A.R.D. Alfred A. Cunningham" "DD-753 A.R.D. John R. Pierce" "DD-754 A.R.D. Frank E. Evans"
+            "DD-755 A.R.D. John A. Bole" "DD-756 A.R.D. Beatty" "DD-757 A.R.D. Putnam" "DD-758 A.R.D. Strong" "DD-759 A.R.D. Lofberg" "DD-760 A.R.D. John W. Thomason" "DD-761 A.R.D. Buck" "DD-762 A.R.D. Henley"
+            "DD-770 A.R.D. Lowry" "DD-774 A.R.D. Hugh W. Hadley" "DD-775 A.R.D. Willard Keith" "DD-776 A.R.D. James C. Owens" "DD-777 A.R.D. Zellars" "DD-778 A.R.D. Massey" "DD-779 A.R.D. Douglas H. Fox" "DD-780 A.R.D. Stormes"
+            "DD-781 A.R.D. Robert K. Huntington" "DD-857 A.R.D. Bristol"
+            }
+    }
+    USA_destroyer_5 = {
+        generic = { "Robert H. Smith Class DM" }
+        unique = {
+            #Allen M. Sumner subclass
+            "DM-23 A.R.D. Robert H. Smith" "DM-24 A.R.D. Thomas E. Fraser" "DM-25 A.R.D. Shannon" "DM-26 A.R.D. Harry F. Bauer" "DM-27 A.R.D. Adams" "DM-28 A.R.D. Tolman" "DM-29 A.R.D. Henry A. Wiley" "DM-30 A.R.D. Shea"
+            "DM-31 A.R.D. J. William Ditter" "DM-32 A.R.D. Lindsey" "DM-33 A.R.D. Gwin" "DM-34 A.R.D. Aaron Ward"
+            }
+    }
+    USA_destroyer_6 = {
+        generic = { "Gearing Class DD" }
+        unique = {
+            #DDs 809-816, 854-856, 891 onwards named for historic Navy Admirals and Commodores
+            "DD-710 A.R.D. Gearing" "DD-711 A.R.D. Eugene A. Greene" "DD-712 A.R.D. Gyatt" "DD-713 A.R.D. Kenneth D. Bailey" "DD-714 A.R.D. William R. Rush" "DD-715 A.R.D. William M. Wood" "DD-716 A.R.D. Wiltsie" "DD-717 A.R.D. Theodore E. Chandler"
+            "DD-718 A.R.D. Hamner" "DD-719 A.R.D. Epperson" "DD-720 A.R.D. Castle" "DD-721 A.R.D. Woodrow R. Thompson" "DD-742 A.R.D. Frank Knox" "DD-743 A.R.D. Southerland" "DD-763 A.R.D. William C. Lawe" "DD-764 A.R.D. Lloyd Thomas"
+            "DD-765 A.R.D. Keppler" "DD-766 A.R.D. Lansdale" "DD-767 A.R.D. Seymour D. Owens" "DD-768 A.R.D. Hoel" "DD-769 A.R.D. Abner Read" "DD-782 A.R.D. Rowan" "DD-783 A.R.D. Gurke" "DD-784 A.R.D. McKean"
+            "DD-785 A.R.D. Henderson" "DD-786 A.R.D. Richard B. Anderson" "DD-787 A.R.D. James E. Kyes" "DD-788 A.R.D. Hollister" "DD-789 A.R.D. Eversole" "DD-790 A.R.D. Shelton" "DD-791 A.R.D. Seaman" "DD-805 A.R.D. Chevalier"
+            "DD-806 A.R.D. Higbee" "DD-807 A.R.D. Benner" "DD-808 A.R.D. Dennis J. Buckley" "DD-809 A.R.D. Wise" "DD-810 A.R.D. Comte de Grasse" "DD-811 A.R.D. Chadwick" "DD-812 A.R.D. Lenthall" "DD-813 A.R.D. Semmes"
+            "DD-814 A.R.D. Paulding" "DD-815 A.R.D. Sicard" "DD-816 A.R.D. Harmony" "DD-817 A.R.D. Corry" "DD-818 A.R.D. New" "DD-819 A.R.D. Holder" "DD-820 A.R.D. Rich" "DD-821 A.R.D. Johnston"
+            "DD-822 A.R.D. Robert H. McCard" "DD-823 A.R.D. Samuel B. Roberts" "DD-824 A.R.D. Basilone" "DD-825 A.R.D. Carpenter" "DD-826 A.R.D. Agerholm" "DD-827 A.R.D. Robert A. Owens" "DD-828 A.R.D. Timmerman" "DD-829 A.R.D. Myles C. Fox"
+            "DD-830 A.R.D. Everett F. Larson" "DD-831 A.R.D. Goodrich" "DD-832 A.R.D. Hanson" "DD-833 A.R.D. Herbert J. Thomas" "DD-834 A.R.D. Turner" "DD-835 A.R.D. Charles P. Cecil" "DD-836 A.R.D. George K. MacKenzie" "DD-837 A.R.D. Sarsfield"
+            "DD-838 A.R.D. Ernest G. Small" "DD-839 A.R.D. Power" "DD-840 A.R.D. Glennon" "DD-841 A.R.D. Noa" "DD-842 A.R.D. Fiske" "DD-843 A.R.D. Warrington" "DD-844 A.R.D. Perry" "DD-845 A.R.D. Bausell"
+            "DD-846 A.R.D. Ozbourn" "DD-847 A.R.D. Robert L. Wilson" "DD-848 A.R.D. Witek" "DD-849 A.R.D. Richard E. Kraus" "DD-850 A.R.D. Joseph P. Kennedy Jr." "DD-851 A.R.D. Rupertus" "DD-852 A.R.D. Leonard F. Mason" "DD-853 A.R.D. Charles H. Roan"
+            "DD-854 A.R.D. Winterhalter" "DD-855 A.R.D. Hanscom" "DD-856 A.R.D. Cowles" "DD-858 A.R.D. Fred T. Berry" "DD-859 A.R.D. Norris" "DD-860 A.R.D. McCaffery" "DD-861 A.R.D. Harwood" "DD-862 A.R.D. Vogelgesang"
+            "DD-863 A.R.D. Steinaker" "DD-864 A.R.D. Harold J. Ellison" "DD-865 A.R.D. Charles R. Ware" "DD-866 A.R.D. Cone" "DD-867 A.R.D. Stribling" "DD-868 A.R.D. Brownson" "DD-869 A.R.D. Arnold J. Isbell" "DD-870 A.R.D. Fechteler"
+            "DD-871 A.R.D. Damato" "DD-872 A.R.D. Forrest Royal" "DD-873 A.R.D. Hawkins" "DD-874 A.R.D. Duncan" "DD-875 A.R.D. Henry W. Tucker" "DD-876 A.R.D. Rogers" "DD-877 A.R.D. Perkins" "DD-878 A.R.D. Vesole"
+            "DD-879 A.R.D. Leary" "DD-880 A.R.D. Dyess" "DD-881 A.R.D. Bordelon" "DD-882 A.R.D. Furse" "DD-883 A.R.D. Newman K. Perry" "DD-884 A.R.D. Floyd B. Parks" "DD-885 A.R.D. John R. Craig" "DD-886 A.R.D. Orleck"
+            "DD-887 A.R.D. Brinkley Bass" "DD-888 A.R.D. Stickell" "DD-889 A.R.D. O'Hare" "DD-890 A.R.D. Meredith" "DD-891 A.R.D. Melville" "DD-892 A.R.D. Connor" "DD-893 A.R.D. Matthews" "DD-894 A.R.D. Wood"
+            "DD-895 A.R.D. Law" "DD-896 A.R.D. White" "DD-897 A.R.D. Folger" "DD-898 A.R.D. Robeson" "DD-899 A.R.D. Toucey" "DD-900 A.R.D. Hackett" "DD-901 A.R.D. Cabot" "DD-902 A.R.D. Stoddert"
+            "DD-903 A.R.D. Mason" "DD-904 A.R.D. Woodbury" "DD-905 A.R.D. Shufeldt" "DD-906 A.R.D. Preble" "DD-907 A.R.D. Skinner" "DD-908 A.R.D. Coontz" "DD-909 A.R.D. Branch" "DD-910 A.R.D. Nichols"
+            "DD-911 A.R.D. Whitney" "DD-912 A.R.D. Tracy" "DD-913 A.R.D. Kennon" "DD-914 A.R.D. Henshaw" "DD-915 A.R.D. Dobbin" "DD-916 A.R.D. Howell" "DD-917 A.R.D. Nicolson" "DD-918 A.R.D. Ramsey"
+            "DD-919 A.R.D. Faxon" "DD-920 A.R.D. Hichborn" "DD-921 A.R.D. Reynolds" "DD-922 A.R.D. Kennedy" "DD-923 A.R.D. Graham" "DD-924 A.R.D. Whiting" "DD-925 A.R.D. Easby" "DD-926 A.R.D. Loring"
+            }
+    }
+    USA_light_cruiser_2 = {
+        generic = { "Brooklyn Class CL" }
+        unique = {
+            "CL-40 A.R.D. Brooklyn" "CL-41 A.R.D. Philadelphia" "CL-42 A.R.D. Savannah" "CL-43 A.R.D. Nashville" "CL-46 A.R.D. Phoenix" "CL-47 A.R.D. Boise" "CL-48 A.R.D. Honolulu"
+            }
+    }
+    USA_light_cruiser_2b = {
+        generic = { "St. Louis Class CL" }
+        unique = {
+            "CL-49 A.R.D. St. Louis" "CL-50 A.R.D. Helena"
+            }
+    }
+    USA_light_cruiser_3 = {
+        generic = { "Cleveland Class CL" }
+        unique = {
+            "CL-55 A.R.D. Cleveland" "CL-56 A.R.D. Columbia" "CL-57 A.R.D. Montpelier" "CL-58 A.R.D. Denver" "CL-60 A.R.D. Santa Fe" "CL-62 A.R.D. Birmingham" "CL-63 A.R.D. Mobile" "CL-64 A.R.D. Vincennes"
+            "CL-65 A.R.D. Pasadena" "CL-66 A.R.D. Springfield" "CL-67 A.R.D. Topeka" "CL-80 A.R.D. Biloxi" "CL-81 A.R.D. Houston" "CL-82 A.R.D. Providence" "CL-83 A.R.D. Manchester" "CL-84 A.R.D. Buffalo"
+            "CL-86 A.R.D. Vicksburg" "CL-87 A.R.D. Duluth" "CL-88 A.R.D. Newark" "CL-89 A.R.D. Miami" "CL-90 A.R.D. Astoria" "CL-91 A.R.D. Oklahoma City" "CL-92 A.R.D. Little Rock" "CL-93 A.R.D. Galveston"
+            "CL-94 A.R.D. Youngstown" "CL-101 A.R.D. Amsterdam" "CL-102 A.R.D. Portsmouth" "CL-103 A.R.D. Wilkes-Barre" "CL-104 A.R.D. Atlanta" "CL-105 A.R.D. Dayton"
+            }
+    }
+    USA_light_cruiser_4 = {
+        generic = { "Fargo Class CL" }
+        unique = {
+            #CL-115 name from Los Angeles class SSN
+            "CL-106 A.R.D. Fargo" "CL-107 A.R.D. Huntington" "CL-108 A.R.D. Newark" "CL-109 A.R.D. New Haven" "CL-110 A.R.D. Buffalo" "CL-111 A.R.D. Wilmington" "CL-112 A.R.D. Vallejo" "CL-113 A.R.D. Helena"
+            "CL-114 A.R.D. Roanoke" "CL-115 A.R.D. Baton Rouge" "CL-116 A.R.D. Tallahassee" "CL-117 A.R.D. Cheyenne" "CL-118 A.R.D. Chattanooga"
+            }
+    }
+    USA_light_cruiser_5 = {
+				
+        generic = { "Worcester Class CL" }
+        unique = {
+            #CL-154 onwards names from Los Angeles class SSN
+            "CL-144 A.R.D. Worcester" "CL-145 A.R.D. Roanoke" "CL-146 A.R.D. Vallejo" "CL-147 A.R.D. Gary" "CL-154 A.R.D. Groton" "CL-155 A.R.D. New York City" "CL-156 A.R.D. Jacksonville" "CL-157 A.R.D. La Jolla"
+            "CL-158 A.R.D. Albuquerque" "CL-159 A.R.D. Olympia"
+            }
+    }
+    USA_AA_light_cruiser_1 = {
+        generic = { "Atlanta Class CLAA" }
+        unique = {
+            #Includes Oakland subclass
+            "CL-51 A.R.D. Atlanta" "CL-52 A.R.D. Juneau" "CL-53 A.R.D. San Diego" "CL-54 A.R.D. San Juan" "CL-95 A.R.D. Oakland" "CL-96 A.R.D. Reno" "CL-97 A.R.D. Flint" "CL-98 A.R.D. Tucson"
+            }
+    }
+    USA_AA_light_cruiser_2 = {
+        generic = { "Juneau Class CLAA" }
+        unique = {
+            "CL-119 A.R.D. Juneau" "CL-120 A.R.D. Spokane" "CL-121 A.R.D. Fresno"
+            }
+    }
+    USA_heavy_cruiser_1d = {
+        generic = { "New Orleans Class CA" }
+        unique = {
+            "CA-39 A.R.D. Quincy" "CA-44 A.R.D. Vincennes"
+            }
+    }
+    USA_heavy_cruiser_2 = {
+        generic = { "Wichita Class CA" }
+        unique = {
+            "CA-45 A.R.D. Wichita"
+            }
+    }
+    USA_heavy_cruiser_3 = {
+        generic = { "Baltimore Class CA" }
+        unique = {
+            "CA-68 A.R.D. Baltimore" "CA-69 A.R.D. Boston" "CA-70 A.R.D. Canberra" "CA-71 A.R.D. Quincy" "CA-72 A.R.D. Pittsburgh" "CA-73 A.R.D. Saint Paul" "CA-74 A.R.D. Columbus" "CA-75 A.R.D. Helena"
+            "CA-130 A.R.D. Bremerton" "CA-131 A.R.D. Fall River" "CA-132 A.R.D. Macon" "CA-133 A.R.D. Toledo" "CA-135 A.R.D. Los Angeles" "CA-136 A.R.D. Chicago"
+            }
+    }
+    USA_heavy_cruiser_4 = {
+        generic = { "Oregon City Class CA" }
+        unique = {
+            "CA-122 A.R.D. Oregon City" "CA-123 A.R.D. Albany" "CA-124 A.R.D. Rochester" "CA-125 A.R.D. Northampton" "CA-126 A.R.D. Cambridge" "CA-127 A.R.D. Bridgeport" "CA-128 A.R.D. Kansas City" "CA-129 A.R.D. Tulsa"
+            "CA-137 A.R.D. Norfolk" "CA-138 A.R.D. Scranton"
+            }
+    }
+    USA_heavy_cruiser_5 = {
+        generic = { "Des Moines Class CA" }
+        unique = {
+            #CA-141 to CA-143 and CA-149 onwards names from Los Angeles class SSN
+            "CA-134 A.R.D. Des Moines" "CA-139 A.R.D. Salem" "CA-140 A.R.D. Dallas" "CA-141 A.R.D. Alexandria" "CA-142 A.R.D. Asheville" "CA-143 A.R.D. Jefferson City" "CA-148 A.R.D. Newport News" "CA-149 A.R.D. Annapolis"
+            "CA-150 A.R.D. Charlotte" "CA-151 A.R.D. Hampton" "CA-152 A.R.D. Hartford" "CA-153 A.R.D. Greenville"
+            }
+    }
+    USA_battle_cruiser_2 = {
+        generic = { "Alaska Class CB" }
+        unique = {
+            "CB-1 A.R.D. Alaska" "CB-2 A.R.D. Guam" "CB-3 A.R.D. Hawaii" "CB-4 A.R.D. Philippines" "CB-5 A.R.D. Puerto Rico" "CB-6 A.R.D. Samoa"
+            }
+    }
+    USA_battleship_2 = {
+        generic = { "North Carolina Class BB" }
+        unique = {
+            "BB-55 A.R.D. North Carolina" "BB-56 A.R.D. Washington"
+        }
+    }
+    USA_battleship_2b = {
+        generic = { "South Dakota Class BB" }
+        unique = {
+            "BB-57 A.R.D. South Dakota" "BB-58 A.R.D. Indiana" "BB-59 A.R.D. Massachusetts" "BB-60 A.R.D. Alabama"
+        }
+    }
+    USA_battleship_3 = {
+        generic = { "Iowa Class BB" }
+        unique = {
+            #Includes Illinois subclass
+            "BB-61 A.R.D. Iowa" "BB-62 A.R.D. New Jersey" "BB-63 A.R.D. Missouri" "BB-64 A.R.D. Wisconsin" "BB-65 A.R.D. Illinois" "BB-66 A.R.D. Kentucky"
+        }
+    }
+    USA_SH_battleship_1 = {
+        generic = { "Montana Class BB" }
+        unique = {
+            "BB-67 A.R.D. Montana" "BB-68 A.R.D. Ohio" "BB-69 A.R.D. Maine" "BB-70 A.R.D. New Hampshire" "BB-71 A.R.D. Lousiana"
+        }
+    }
+    USA_carrier_2b = {
+        generic = { "Yorktown Class CV" }
+        unique = {
+            "CV-5 A.R.D. Yorktown" "CV-6 A.R.D. Enterprise" "CV-8 A.R.D. Hornet"
+            }
+    }
+    USA_carrier_2c = {
+        generic = { "Wasp Class CV" }
+        unique = {
+            "CV-7 A.R.D. Wasp"
+            }
+    }
+    USA_carrier_3 = {
+        generic = { "Essex Class CV" }
+        unique = {
+            #Includes Ticonderoga subclass; CV-50 onwards names from Ticonderoga class CG
+            "CV-9 A.R.D. Essex" "CV-10 A.R.D. Yorktown" "CV-11 A.R.D. Intrepid" "CV-12 A.R.D. Hornet" "CV-13 A.R.D. Franklin" "CV-14 A.R.D. Ticonderoga" "CV-15 A.R.D. Randolph" "CV-16 A.R.D. Lexington"
+            "CV-17 A.R.D. Bunker Hill" "CV-18 A.R.D. Wasp" "CV-19 A.R.D. Hancock" "CV-20 A.R.D. Bennington" "CV-21 A.R.D. Boxer" "CV-31 A.R.D. Bonhomme Richard" "CV-32 A.R.D. Leyte" "CV-33 A.R.D. Kearsarge"
+            "CV-34 A.R.D. Oriskany" "CV-35 A.R.D. Reprisal" "CV-36 A.R.D. Antietam" "CV-37 A.R.D. Princeton" "CV-38 A.R.D. Shangri La" "CV-39 A.R.D. Lake Champlain" "CV-40 A.R.D. Tarawa" "CV-45 A.R.D. Valley Forge"
+            "CV-46 A.R.D. Iwo Jima" "CV-47 A.R.D. Philippine Sea" "CV-50 A.R.D. Okinawa" "CV-51 A.R.D. Gettysburg" "CV-52 A.R.D. Anzio" "CV-53 A.R.D. Chancellorsville" "CV-54 A.R.D. Vella Gulf" "CV-55 A.R.D. Appomattox"
+            }
+    }
+    USA_carrier_4 = {
+        generic = { "Midway Class CVB" }
+        unique = {
+            #CVB-44 to CVB-57 names from Nimitz class CVN
+            "CVB-41 A.R.D. Midway" "CVB-42 A.R.D. Franklin D. Roosevelt" "CVB-43 A.R.D. Coral Sea" "CVB-44 A.R.D. George Washington" "CVB-56 A.R.D. Abraham Lincoln" "CVB-57 A.R.D. Thomas Jefferson"
+            }
+    }
+    USA_lcarrier_1 = {
+        generic = { "Independence Class CVL" }
+        unique = {
+            "CVL-22 A.R.D. Independence" "CVL-23 A.R.D. Princeton" "CVL-24 A.R.D. Belleau Wood" "CVL-25 A.R.D. Cowpens" "CVL-26 A.R.D. Monterey" "CVL-27 A.R.D. Langley" "CVL-28 A.R.D. Cabot" "CVL-29 A.R.D. Bataan"
+            "CVL-30 A.R.D. San Jacinto"
+            }
+    }
+    USA_lcarrier_2 = {
+        generic = { "Saipan Class CVL" }
+        unique = {
+            "CVL-48 A.R.D. Saipan" "CVL-49 A.R.D. Wright"
+            }
+    }
+    USA_ecarrier_1 = {
+        generic = { "Long Island Class CVE" }
+        unique = {
+            "CVE-1 A.R.D. Long Island"
+            }
+    }
+    USA_ecarrier_2 = {
+        generic = { "Bogue Class CVE" }
+        unique = {
+            "CVE-9 A.R.D. Bogue" "CVE-11 A.R.D. Card" "CVE-12 A.R.D. Copahee" "CVE-13 A.R.D. Core" "CVE-16 A.R.D. Nassau" "CVE-18 A.R.D. Altamaha" "CVE-20 A.R.D. Barnes" "CVE-21 A.R.D. Block Island"
+            "CVE-23 A.R.D. Breton" "CVE-25 A.R.D. Croatan" "CVE-31 A.R.D. Prince William"
+            }
+    }
+    USA_ecarrier_3 = {
+        generic = { "Sangamon Class CVE" }
+        unique = {
+            "CVE-26 A.R.D. Sangamon" "CVE-27 A.R.D. Suwannee" "CVE-28 A.R.D. Chenango" "CVE-29 A.R.D. Santee"
+            }
+    }
+    USA_ecarrier_4 = {
+        generic = { "Casablanca Class CVE" }
+        unique = {
+            "CVE-55 A.R.D. Casablanca" "CVE-56 A.R.D. Liscome Bay" "CVE-57 A.R.D. Anzio" "CVE-58 A.R.D. Corregidor" "CVE-59 A.R.D. Mission Bay" "CVE-60 A.R.D. Guadalcanal" "CVE-61 A.R.D. Manila Bay" "CVE-62 A.R.D. Natoma Bay"
+            "CVE-63 A.R.D. St. Lo" "CVE-64 A.R.D. Tripoli" "CVE-65 A.R.D. Wake Island" "CVE-66 A.R.D. White Plains" "CVE-67 A.R.D. Solomons" "CVE-68 A.R.D. Kalinin Bay" "CVE-69 A.R.D. Kasaan Bay" "CVE-70 A.R.D. Fanshaw Bay"
+            "CVE-71 A.R.D. Kitkun Bay" "CVE-72 A.R.D. Tulagi" "CVE-73 A.R.D. Gambier Bay" "CVE-74 A.R.D. Nehenta Bay" "CVE-75 A.R.D. Hoggatt Bay" "CVE-76 A.R.D. Kadashan Bay" "CVE-77 A.R.D. Marcus Island" "CVE-78 A.R.D. Savo Island"
+            "CVE-79 A.R.D. Ommaney Bay" "CVE-80 A.R.D. Petrof Bay" "CVE-81 A.R.D. Rudyerd Bay" "CVE-82 A.R.D. Saginaw Bay" "CVE-83 A.R.D. Sargent Bay" "CVE-84 A.R.D. Shamrock Bay" "CVE-85 A.R.D. Shipley Bay" "CVE-86 A.R.D. Sitkoh Bay"
+            "CVE-87 A.R.D. Steamer Bay" "CVE-88 A.R.D. Cape Esperance" "CVE-89 A.R.D. Takanis Bay" "CVE-90 A.R.D. Thetis Bay" "CVE-91 A.R.D. Makassar Strait" "CVE-92 A.R.D. Windham Bay" "CVE-93 A.R.D. Makin Island" "CVE-94 A.R.D. Lunga Point"
+            "CVE-95 A.R.D. Bismarck Sea" "CVE-96 A.R.D. Salamaua" "CVE-97 A.R.D. Hollandia" "CVE-98 A.R.D. Kwajalein" "CVE-99 A.R.D. Admiralty Islands" "CVE-100 A.R.D. Bougainville" "CVE-101 A.R.D. Matanikau" "CVE-102 A.R.D. Attu"
+            "CVE-103 A.R.D. Roi" "CVE-104 A.R.D. Munda"
+            }
+    }
+    USA_ecarrier_5 = {
+			 
+        generic = { "Commencement Bay Class CVE" }
+        unique = {
+            "CVE-105 A.R.D. Commencement Bay" "CVE-106 A.R.D. Block Island" "CVE-107 A.R.D. Gilbert Islands" "CVE-108 A.R.D. Kula Gulf" "CVE-109 A.R.D. Cape Gloucester" "CVE-110 A.R.D. Salerno Bay" "CVE-111 A.R.D. Vella Gulf" "CVE-112 A.R.D. Siboney"
+            "CVE-113 A.R.D. Puget Sound" "CVE-114 A.R.D. Rendova" "CVE-115 A.R.D. Bairoko" "CVE-116 A.R.D. Badoeng Strait" "CVE-117 A.R.D. Saidor" "CVE-118 A.R.D. Sicily" "CVE-119 A.R.D. Point Cruz" "CVE-120 A.R.D. Mindoro"
+            "CVE-121 A.R.D. Rabaul" "CVE-122 A.R.D. Palau" "CVE-123 A.R.D. Tinian" "CVE-124 A.R.D. Bastogne" "CVE-125 A.R.D. Eniwetok" "CVE-126 A.R.D. Lingayen" "CVE-127 A.R.D. Okinawa"
 		}
 	}
 infantry = {

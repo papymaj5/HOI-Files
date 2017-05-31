@@ -1,4 +1,4 @@
-name="JJs Mod"
+name="0Blackice HOI IV - JJs Mod"
 path="Mod/JJsMod"
 tags={
 	"Alternative History"

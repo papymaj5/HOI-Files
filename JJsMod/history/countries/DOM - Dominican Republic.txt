@@ -1,6 +1,6 @@
 ﻿capital = 319
 
-oob = "DOM_1936"
+oob = "dom_1936"
 
 set_research_slots = 4
 
@@ -30,54 +30,107 @@ set_technology = {
 	interwar_medartillery = 1
 	############### armor ##############
 	gwtank = 1
-	basic_light_tank = 1
 	american_tech_1 = 1
 	american_tech_2 = 1
 	american_tech_3 = 1
 	american_tech_4 = 1
 	american_tech_5 = 1
 	american_tech_6 = 1
-	american_tech_7  = 1
+	american_tech_7 = 1
+	tech_usa_ac_recon = 1
+	tech_usa_Tankettes = 1
+	tech_usa_Gun_Carriers = 1
+	tech_american_light_tank_equipment_1 = 1
+	tech_american_light_tank_equipment_2 =  1
 	############## aircraft ##############
 	tech_usaaf = 1 
 	tech_american_aircraft1 = 1 
-	early_fighter = 1
-	cv_early_fighter = 1
-	cv_naval_bomber1 = 1
-	cv_CAS1 = 1
-	naval_bomber1 = 1
-	CAS1 = 1
-	early_bomber = 1
-	############### ships ###############
+	tech_boeing_f4b4_equipment_1 = 1 
+	tech_grumman_ff_equipment_1 = 1 
+	tech_grumman_f2f_equipment_1 = 1 
+	tech_grumman_f3f_equipment_1 = 1 
+	tech_lakes_bg_equipment_1 = 1 
+	tech_vought_sbu_equipment_1 = 1 
+	tech_great_lakes_tg2_equipment_1 = 1 
+	tech_martin_bm_equipment_1 = 1 
+	tech_douglas_tbd_equipment_1 = 1 
+	tech_northrop_a17_equipment_1 = 1 
+	tech_martin_b10_bomber_equipment_1 = 1 
+	tech_usa_boeing_p26_equipment_1 = 1 
+	tech_consolidated_p2y_equipment_1 = 1 
+	tech_consolidated_p30_equipment_1 = 1 
+	################## navy ######################
+	generic_submarine = 1
+	early_submarine = 1
+	basic_submarine = 1
 	tech_usn = 1
+	tech_usn_transport = 1
 	tech_usn_dd = 1
 	tech_usn_cl = 1
 	tech_usn_ca = 1
 	tech_usn_bb = 1
 	tech_usn_cv = 1
-	early_submarine = 1
-	basic_submarine = 1
-	early_destroyer = 1
-	early_light_cruiser = 1
-	basic_light_cruiser = 1
-	early_heavy_cruiser = 1
-	early_battleship = 1
-	early_battlecruiser = 1
-	early_carrier = 1
-	basic_carrier = 1
-	transport = 1
 	############### doctrine ###############
 	superior_firepower = 1
 	fleet_in_being = 1
-	################# economy ############
+	################## economy #############
 	basic_machine_tools = 1
+	improved_machine_tools = 1
 	concentrated_industry = 1
+	synth_oil_experiments = 1
+	oil_plant = 1
+	#improved_oil_plant = 1
+	uniform_industry = 1
+	armor_industry = 1
+	vehicle_industry = 1
+	vehicle_industry2 = 1
+	ship_industry = 1
+	ship_industry2 = 1
+	infra_works = 1
+	infra_works2 = 1
+	rail_infra = 1
+	rail_infra2 = 1
+	road_infra = 1
+	road_infra2 = 1
+	air_infra = 1
+	air_infra2 = 1
+	port_infra = 1
+	port_infra2 = 1
+	heavy_industry = 1
+	heavy_industry2 = 1
+	civ_works = 1
+	civ_works2 = 1
+	housing_work = 1
+	housing_work2 = 1
+	hospital_work = 1
+	hospital_work2 = 1
+	schools_work = 1
+	schools_work2 = 1
 }
 
 add_ideas = {
-	partial_economic_mobilisation
-	volunteer_only
 	free_trade
+	tax_low
+	tariffs_average
+	
+	civilian_economy
+	press_regulated
+	key_industries
+	labor_none
+	fdi_allowed
+	
+	volunteer_only
+	foreign_volunteers
+	mob_reserve
+	train_none
+	age_19
+	officer_train_none
+	security_minor_restrictions
+	edu_minimal
+	
+	unity_united_nation		
+	foreign_isolationism
+	neutrality_idea
 }
 
 set_convoys = 50
@@ -97,7 +150,7 @@ set_convoys = 50
 	complete_national_focus = construction_effort
 	complete_national_focus = production_effort
 	
-	oob = "DOM_1939"
+	oob = "dom_1939"
 	set_technology = {
 		infantry_weapons1 = 1
 
@@ -248,74 +301,5 @@ create_navy_leader = {
 		traits = {
 			#
 		}
-	}
-}
-### Ship Variants ###
-
-create_equipment_variant = {
-	name = "Barracuda Class"
-	type = submarine_1
-	upgrades = {
-		ship_reliability_upgrade = 1
-		sub_engine_upgrade = 1
-		sub_stealth_upgrade = 1
-		sub_torpedo_upgrade = 1
-	}
-	obsolete = yes
-}
-
-create_equipment_variant = {
-	name = "Farragut Class"
-	type = destroyer_1
-	upgrades = {
-		ship_torpedo_upgrade = 3
-		destroyer_engine_upgrade = 3
-		ship_ASW_upgrade = 3
-		ship_anti_air_upgrade = 3
-	}
-}
-
-create_equipment_variant = {
-	name = "Portland Class"
-	type = heavy_cruiser_1
-	upgrades = {
-		ship_reliability_upgrade = 2
-		ship_engine_upgrade = 2
-		ship_armor_upgrade = 2
-		ship_gun_upgrade = 2
-	}
-}
-
-create_equipment_variant = {
-	name = "Pennsylvania Class"
-	type = battleship_1
-	upgrades = {
-		ship_reliability_upgrade = 1
-		ship_engine_upgrade = 1
-		ship_armor_upgrade = 1
-		ship_gun_upgrade = 1
-	}
-	obsolete = yes
-}
-
-create_equipment_variant = {
-	name = "New Mexico Class"
-	type = battleship_1
-	upgrades = {
-		ship_reliability_upgrade = 2
-		ship_engine_upgrade = 2
-		ship_armor_upgrade = 2
-		ship_gun_upgrade = 2
-	}
-}
-
-create_equipment_variant = {
-	name = "Yorktown Class"
-	type = carrier_2
-	upgrades = {
-		ship_deckspace_upgrade = 1
-		carrier_armor_upgrade = 1
-		ship_engine_upgrade = 1
-		ship_reliability_upgrade = 1
 	}
 }

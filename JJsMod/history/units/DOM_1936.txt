@@ -1,139 +1,262 @@
 ﻿##### Division Templates #####
 division_template = {
-	name = "Infantry Division"  	# Standard formation for frontline divisions
+	name = "Infantry Division (RA)"  	# Standard formation for frontline divisions after 1940-41
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
+		
 		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
 		infantry = { x = 1 y = 2 }
+		
 		infantry = { x = 2 y = 0 }
 		infantry = { x = 2 y = 1 }
 		infantry = { x = 2 y = 2 }
+		
+		artillery_brigade_mot = { x = 3 y = 0 }
+		artillery_brigade_mot = { x = 3 y = 1 }
+		artillery_brigade_mot = { x = 3 y = 2 }
 	}
 	support = {
-		artillery = { x = 0 y = 0 }  # US Hvy Field Arty consisted of 2 Bns, 155mm howitzers
-		engineer = { x = 0 y = 1 }   # US Eng Rgt consisted of 2 Bns
+		DIV_HQ = { x = 0 y = 0 }
+		artillery_medium_mot = { x = 0 y = 1 }  # US Hvy Field Arty consisted of 2 Bns, 155mm howitzers
+		engineer = { x = 0 y = 2 }   # US Eng Rgt consisted of 2 Bns
+		recon_mot = { x = 0 y = 3 }
+		
+		maintenance_company = { x = 1 y = 0 }
+		logistics_company = { x = 1 y = 1 }
+		field_hospital = { x = 1 y = 2 }
 	}
 }
+
 division_template = {
-	name = "National Guard Division"  	# Standard formation for NG divisions through late 1940
+	name = "Infantry Division (NG)"  	# Standard formation for National Guard divisions through late 1940
 
 	regiments = {						
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
+		
 		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
 		infantry = { x = 1 y = 2 }
+		
 		infantry = { x = 2 y = 0 }
 		infantry = { x = 2 y = 1 }
 		infantry = { x = 2 y = 2 }
+		
 		infantry = { x = 3 y = 0 }
 		infantry = { x = 3 y = 1 }
 		infantry = { x = 3 y = 2 }
+		
+		artillery_brigade_mot = { x = 4 y = 0 }
 	}
 	support = {
-		artillery = { x = 0 y = 0 }  # US Hvy Field Arty consisted of 2 Bns, 155mm howitzers
-		engineer = { x = 0 y = 1 }   # US Eng Rgt consisted of 2 Bns
+		DIV_HQ = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1}   # US Eng Rgt consisted of 2 Bns
+		recon	 = { x = 0 y = 2 }
+		maintenance_company = { x = 1 y = 0 }
+		logistics_company = { x = 1 y = 1 }
+		field_hospital = { x = 1 y = 2 }
 	}
+	priority = 0
 }
 division_template = {
 	name = "Cavalry Division"  		# 1st Cavalry Division only
 
 	regiments = {
-		cavalry = { x = 0 y = 0 }
-		cavalry = { x = 0 y = 1 }
-		cavalry = { x = 0 y = 2 }
-		cavalry = { x = 0 y = 3 }
-		cavalry = { x = 1 y = 0 }
-		cavalry = { x = 1 y = 1 }
-		cavalry = { x = 1 y = 2 }
-		cavalry = { x = 1 y = 3 }
+		mechanized 	= { x = 0 y = 0 }
+		semi_motorized 	= { x = 0 y = 1 }
+		semi_motorized 	= { x = 0 y = 2 }
+		semi_motorized 	= { x = 0 y = 3 }
+		
+		motorized  = { x = 1 y = 0 }
+		semi_motorized  = { x = 1 y = 1 }
+		semi_motorized 	= { x = 1 y = 2 }
+		semi_motorized 	= { x = 1 y = 3 }
+		
+		american_light_tank = { x = 2 y = 0 }
+
+		mountain_artillery_brigade_mot = { x = 3 y = 0 }
 	}
 	support = {
-		recon = { x = 0 y = 0 }      # US Cav Recon consisted of 52 ACs, 13 L Arm
-		engineer = { x = 0 y = 1 }   # US Eng Bn
+		DIV_HQ = { x = 0 y = 0 }
+		recon_ac = { x = 0 y = 1 }   # US Cav Recon consisted of 52 ACs, 13 L Arm
+		recon_mot = { x = 0 y = 2 } 
+		engineer = { x = 0 y = 3 }   # US Eng Bn
+		
+		maintenance_company = { x = 1 y = 0 }
+		logistics_company = { x = 1 y = 1 }
+		field_hospital = { x = 1 y = 2 }
 	}
 }
 division_template = {
-	name = "Garrison Brigade"  		# used for island defense (older equipment, lower experience)
+	name =  "Territorial Brigade"  		# used for island defense (older equipment, lower experience)
 
 	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
+		garrison = { x = 0 y = 0 }
+		garrison = { x = 0 y = 1 }
+		
+		mountain_artillery_brigade_mot = { x = 1 y = 0 }
 	}
 	support = {
-		engineer = { x = 0 y = 0 }   
+		DIV_HQ = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		anti_air = { x = 0 y = 2 }
 	}
 	priority = 0
+}
+
+division_template = {
+	name = "Marine Division"				
+	regiments = {
+		marine = { x = 0 y = 0 }
+		marine = { x = 0 y = 1 }
+		marine = { x = 0 y = 2 }
+
+		marine = { x = 1 y = 0 }
+		marine = { x = 1 y = 1 }
+		marine = { x = 1 y = 2 }
+
+		marine = { x = 2 y = 0 }
+		marine = { x = 2 y = 1 }
+		marine = { x = 2 y = 2 }
+
+		mountain_artillery_brigade_mot = { x = 3 y = 0 }
+		mountain_artillery_brigade_mot = { x = 3 y = 1 }
+		mountain_artillery_brigade_mot = { x = 3 y = 2 }
+	}
+	support = {
+		DIV_HQ = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		recon  = { x = 0 y = 2 }
+		
+		maintenance_company = { x = 1 y = 0 }
+		logistics_company = { x = 1 y = 1 }
+		field_hospital = { x = 1 y = 2 }
+		amph_support  = { x = 1 y = 3 }
+	}	
+	priority = 2
+}
+
+division_template = {
+	name = "Light Armor Division"  		
+
+	regiments = {
+		mechanized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		
+		motorized  = { x = 1 y = 0 }
+		motorized  = { x = 1 y = 1 }
+		motorized  = { x = 1 y = 2 }
+		
+		american_light_tank = { x = 2 y = 0 }
+		american_light_tank = { x = 2 y = 1 }
+		american_light_tank = { x = 2 y = 2 }
+
+		artillery_brigade_mot= { x = 3 y = 0 }
+	}
+	support = {
+		DIV_HQ = { x = 0 y = 0 }
+		recon_ac = { x = 0 y = 1 }   # US Cav Recon consisted of 52 ACs, 13 L Arm
+		recon_mot = { x = 0 y = 2 }
+		engineer = { x = 0 y = 3 }   # US Eng Bn
+		
+	}
 }
 
 units = {
 	##### Ejército de República Dominicana #####
 	division= {	
-		name = "Ejército Dominicana"
+		name = "1st Ejército Dominicana Div"
 		location = 7660 # Santo Domingo
-		division_template = "Infantry Division"		
+		division_template = "Infantry Division (RA)"		
 		start_equipment_factor = 0.3
-  }
-		navy = {					
+	}
+	navy = {					
 		name = "Destroyer Squadron 1"				
 		base = 7660
 		location = 7660
-		ship = { name = "ARD Santo Domingo" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = DOM } } }				
-		ship = { name = "ARD Farragut" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = DOM version_name = "Farragut Class"} } }	
-		ship = { name = "ARD Dewey" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = DOM version_name = "Farragut Class"} } }	
-		ship = { name = "ARD Hull" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = DOM version_name = "Farragut Class"} } }	
-		ship = { name = "ARD Macdonough" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = DOM version_name = "Farragut Class"} } }	
-		ship = { name = "ARD Worden" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = DOM version_name = "Farragut Class"} } }	
-		ship = { name = "ARD Dale" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = DOM version_name = "Farragut Class"} } }	
-		ship = { name = "ARD Monaghan" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = DOM version_name = "Farragut Class"} } }	
-		ship = { name = "ARD Aylwin" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = DOM version_name = "Farragut Class"} } }				
+		ship = { name = "CL-7 A.R.D. Raleigh" definition = light_cruiser equipment = { USA_light_cruiser_1 = { amount = 1 owner = DOM } } }               
+        # 1st Destroyer Division               
+        ship = { name = "DD-349 A.R.D. Dewey" definition = destroyer equipment = { USA_destroyer_1d = { amount = 1 owner = DOM } } }
+        ship = { name = "DD-350 A.R.D. Hull" definition = destroyer equipment = { USA_destroyer_1d = { amount = 1 owner = DOM } } }
+        ship = { name = "DD-351 A.R.D. MacDonough" definition = destroyer equipment = { USA_destroyer_1d = { amount = 1 owner = DOM } } }
+        ship = { name = "DD-352 A.R.D. Worden" definition = destroyer equipment = { USA_destroyer_1d = { amount = 1 owner = DOM } } }
+        # 2nd Destroyer Division               
+        ship = { name = "DD-348 A.R.D. Farragut" definition = destroyer equipment = { USA_destroyer_1d = { amount = 1 owner = DOM } } }
+        ship = { name = "DD-353 A.R.D. Dale" definition = destroyer equipment = { USA_destroyer_1d = { amount = 1 owner = DOM } } }
+        ship = { name = "DD-354 A.R.D. Monaghan" definition = destroyer equipment = { USA_destroyer_1d = { amount = 1 owner = DOM } } }
+        ship = { name = "DD-355 A.R.D. Aylwin" definition = destroyer equipment = { USA_destroyer_1d = { amount = 1 owner = DOM } } }
+        # 34th Destroyer Division           
+        ship = { name = "DD-113 A.R.D. Rathburne" definition = destroyer equipment = { USA_destroyer_1b = { amount = 1 owner = DOM } } }       
+        ship = { name = "DD-114 A.R.D. Talbot" definition = destroyer equipment = { USA_destroyer_1b = { amount = 1 owner = DOM } } }       
+        ship = { name = "DD-115 A.R.D. Waters" definition = destroyer equipment = { USA_destroyer_1b = { amount = 1 owner = DOM } } }       
+        ship = { name = "DD-116 A.R.D. Dent" definition = destroyer equipment = { USA_destroyer_1b = { amount = 1 owner = DOM  } } }       
+        # 35th Destroyer Division           
+        ship = { name = "DD-267 A.R.D. Ballard" definition = destroyer equipment = { USA_destroyer_1c = { amount = 1 owner = DOM } } }       
+        ship = { name = "DD-270 A.R.D. Thornton" definition = destroyer equipment = { USA_destroyer_1c = { amount = 1 owner = DOM } } }       
+        ship = { name = "DD-336 A.R.D. Litchfield" definition = destroyer equipment = { USA_destroyer_1c = { amount = 1 owner = DOM } } }       
+        ship = { name = "DD-337 A.R.D. Zane" definition = destroyer equipment = { USA_destroyer_1c = { amount = 1 owner = DOM } } }       
+        ship = { name = "DD-338 A.R.D. Wasmuth" definition = destroyer equipment = { USA_destroyer_1c = { amount = 1 owner = DOM } } }       
 	}
 	navy = {					
 		name = "Destroyer Squadron 2"				
 		base = 7660
 		location = 7660
-		ship = { name = "ARD El Benefactor" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = DOM } } }				
-		ship = { name = "ARD Porter" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = DOM version_name = "Farragut Class"} } }	
-		ship = { name = "ARD Selfridge" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = DOM version_name = "Farragut Class"} } }	
-		ship = { name = "ARD McDougal" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = DOM version_name = "Farragut Class"} } }	
-		ship = { name = "ARD Winslow" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = DOM version_name = "Farragut Class"} } }	
-		ship = { name = "ARD Phelps" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = DOM version_name = "Farragut Class"} } }	
-		ship = { name = "ARD Clark" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = DOM version_name = "Farragut Class"} } }	
-		ship = { name = "ARD Moffett" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = DOM version_name = "Farragut Class"} } }	
-		ship = { name = "ARD Balch" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = DOM version_name = "Farragut Class"} } }				
+		ship = { name = "CL-4 A.R.D. Omaha" definition = light_cruiser equipment = { USA_light_cruiser_1 = { amount = 1 owner = DOM } } }
+		# 26th Destroyer Division               
+        ship = { name = "DD-215 A.R.D. Borie" definition = destroyer equipment = { USA_destroyer_1c = { amount = 1 owner = DOM } } }       
+        ship = { name = "DD-148 A.R.D. Breckinridge" definition = destroyer equipment = { USA_destroyer_1b = { amount = 1 owner = DOM   } } }       
+        ship = { name = "DD-149 A.R.D. Barney" definition = destroyer equipment = { USA_destroyer_1b = { amount = 1 owner = DOM   } } }       
+        ship = { name = "DD-150 A.R.D. Blakeley" definition = destroyer equipment = { USA_destroyer_1b = { amount = 1 owner = DOM   } } }       
+        ship = { name = "DD-151 A.R.D. Biddle" definition = destroyer equipment = { USA_destroyer_1b = { amount = 1 owner = DOM   } } }       
+        # 27th Destroyer Division               
+        ship = { name = "DD-125 A.R.D. Tattnall" definition = destroyer equipment = { USA_destroyer_1b = { amount = 1 owner = DOM   } } }       
+        ship = { name = "DD-156 A.R.D. J. Fred Talbott" definition = destroyer equipment = { USA_destroyer_1b = { amount = 1 owner = DOM   } } }       
+        ship = { name = "DD-187 A.R.D. Dahlgren" definition = destroyer equipment = { USA_destroyer_1c = { amount = 1 owner = DOM   } } }       
+        ship = { name = "DD-247 A.R.D. Goff" definition = destroyer equipment = { USA_destroyer_1c = { amount = 1 owner = DOM } } }       
+        ship = { name = "DD-248 A.R.D. Barry" definition = destroyer equipment = { USA_destroyer_1c = { amount = 1 owner = DOM } } }			
 	}
 	navy = {					
 		name = "Submarine Squadron 1"				
 		base = 7660
 		location = 7660		
-		ship = { name = "ARD Presidente Trujillo" definition = submarine equipment = { submarine_2 = { amount = 1 owner = DOM } } }
-		ship = { name = "ARD Juan Pablo Duarte" definition = submarine equipment = { submarine_2 = { amount = 1 owner = DOM } } }
-		ship = { name = "ARD Pedro Santana" definition = submarine equipment = { submarine_2 = { amount = 1 owner = DOM } } }
-		ship = { name = "ARD Cristobal Colón" definition = submarine equipment = { submarine_2 = { amount = 1 owner = DOM } } }
-		ship = { name = "ARD Juan Alejandro Acosta" definition = submarine equipment = { submarine_2 = { amount = 1 owner = DOM } } }
-		ship = { name = "ARD Juan Bautista Cambiaso" definition = submarine equipment = { submarine_2 = { amount = 1 owner = DOM } } }
-		ship = { name = "ARD Gerardo Jansen" definition = submarine equipment = { submarine_2 = { amount = 1 owner = DOM } } }
-		ship = { name = "ARD Juan Bautista Maggiolo" definition = submarine equipment = { submarine_2 = { amount = 1 owner = DOM } } }
-  }
+		ship = { name = "SS-141 A.R.D. S-36" definition = submarine equipment = { submarine_1 = { amount = 1 owner = DOM } } }
+		ship = { name = "SS-142 A.R.D. S-37" definition = submarine equipment = { submarine_1 = { amount = 1 owner = DOM } } }
+		ship = { name = "SS-143 A.R.D. S-38" definition = submarine equipment = { submarine_1 = { amount = 1 owner = DOM } } }
+		ship = { name = "SS-144 A.R.D. S-39" definition = submarine equipment = { submarine_1 = { amount = 1 owner = DOM } } }
+		ship = { name = "SS-145 A.R.D. S-40" definition = submarine equipment = { submarine_1 = { amount = 1 owner = DOM } } }
+		ship = { name = "SS-146 A.R.D. S-41" definition = submarine equipment = { submarine_1 = { amount = 1 owner = DOM } } }
+		# 22nd Submarine Division               
+		ship = { name = "SS-89 A.R.D. R-12" definition = submarine equipment = { submarine_1 = { amount = 1 owner = DOM version_name="R Class" } } }
+		ship = { name = "SS-92 A.R.D. R-15" definition = submarine equipment = { submarine_1 = { amount = 1 owner = DOM version_name="R Class" } } }
+		ship = { name = "SS-93 A.R.D. R-16" definition = submarine equipment = { submarine_1 = { amount = 1 owner = DOM version_name="R Class" } } }
+		ship = { name = "SS-94 A.R.D. R-17" definition = submarine equipment = { submarine_1 = { amount = 1 owner = DOM version_name="R Class" } } }
+		ship = { name = "SS-95 A.R.D. R-18" definition = submarine equipment = { submarine_1 = { amount = 1 owner = DOM version_name="R Class" } } }
+		ship = { name = "SS-96 A.R.D. R-19" definition = submarine equipment = { submarine_1 = { amount = 1 owner = DOM version_name="R Class" } } }
+    }
   navy = {					
 		name = "Submarine Squadron 2"				
 		base = 7660
 		location = 7660		
-		ship = { name = "ARD Barracuda" definition = submarine equipment = { submarine_2 = { amount = 1 owner = DOM } } }
-		ship = { name = "ARD Bass" definition = submarine equipment = { submarine_2 = { amount = 1 owner = DOM } } }
-		ship = { name = "ARD Bonita" definition = submarine equipment = { submarine_2 = { amount = 1 owner = DOM } } }
-		ship = { name = "ARD Argonaut" definition = submarine equipment = { submarine_2 = { amount = 1 owner = DOM } } }
-		ship = { name = "ARD Narwhal" definition = submarine equipment = { submarine_2 = { amount = 1 owner = DOM } } }
-		ship = { name = "ARD Nautilus" definition = submarine equipment = { submarine_2 = { amount = 1 owner = DOM } } }
-		ship = { name = "ARD Dolphin" definition = submarine equipment = { submarine_2 = { amount = 1 owner = DOM } } }
-		ship = { name = "ARD Cachalot" definition = submarine equipment = { submarine_2 = { amount = 1 owner = DOM } } }
-  }
+		# 31st Submarine Division           
+		ship = { name = "SS-105 A.R.D. S-1" definition = submarine equipment = { submarine_1 = { amount = 1 owner = DOM } } }
+		ship = { name = "SS-116 A.R.D. S-11" definition = submarine equipment = { submarine_1 = { amount = 1 owner = DOM } } }
+		ship = { name = "SS-117 A.R.D. S-12" definition = submarine equipment = { submarine_1 = { amount = 1 owner = DOM } } }
+		ship = { name = "SS-118 A.R.D. S-13" definition = submarine equipment = { submarine_1 = { amount = 1 owner = DOM } } }
+		ship = { name = "SS-119 A.R.D. S-14" definition = submarine equipment = { submarine_1 = { amount = 1 owner = DOM } } }
+		ship = { name = "SS-120 A.R.D. S-15" definition = submarine equipment = { submarine_1 = { amount = 1 owner = DOM } } }
+		ship = { name = "SS-121 A.R.D. S-16" definition = submarine equipment = { submarine_1 = { amount = 1 owner = DOM } } }
+		ship = { name = "SS-122 A.R.D. S-17" definition = submarine equipment = { submarine_1 = { amount = 1 owner = DOM } } }
+		# 32nd Submarine Division           
+		ship = { name = "SS-163 A.R.D. Barracuda" definition = submarine equipment = { submarine_1 = { amount = 1 owner = DOM version_name = "Barracuda Class" } } }
+		ship = { name = "SS-164 A.R.D. Bass" definition = submarine equipment = { submarine_1 = { amount = 1 owner = DOM version_name = "Barracuda Class" } } }
+		ship = { name = "SS-165 A.R.D. Bonita" definition = submarine equipment = { submarine_1 = { amount = 1 owner = DOM version_name = "Barracuda Class" } } }
+	}
 }
 
 ##### No notable air force #####
@@ -141,17 +264,17 @@ units = {
 instant_effect = {
 	add_equipment_production = {
 		equipment = {
-			type = infantry_equipment_1
+			type = infantry_equipment_0
 			creator = "DOM"
 		}
-		requested_factories = 5
-		progress = 0.47
-		efficiency = 100
+		requested_factories = 2
+		progress = 0.1
+		efficiency = 10
 	}
 	add_equipment_production = {
 		equipment = {
 			type = support_equipment_1
-			creator = "USA" 
+			creator = "DOM" 
 		}
 		requested_factories = 1
 		progress = 0.3
@@ -159,8 +282,8 @@ instant_effect = {
 	}
 	add_equipment_production = {
 		equipment = {
-			type = artillery_equipment_1
-			creator = "USA" 
+			type = artillery_equipment_0
+			creator = "DOM" 
 		}
 		requested_factories = 1
 		progress = 0.3
@@ -168,30 +291,156 @@ instant_effect = {
 	}
 	add_equipment_production = {
 		equipment = {
-			type = destroyer_1
-			version_name = "Farragut Class"
+			type = infantry_uniforms_0
 			creator = "DOM"
 		}
-		requested_factories = 5
-		progress = 0.80
-		amount = 8
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 50
 	}
 	add_equipment_production = {
 		equipment = {
-			type = submarine_2
+			type = HQ_equipment_0
 			creator = "DOM"
 		}
-		requested_factories = 5
-		progress = 0.50
-		amount = 8
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 50
 	}
 	add_equipment_production = {
 		equipment = {
-			type = light_cruiser_2
+			type = garrison_equipment_0
 			creator = "DOM"
 		}
-		requested_factories = 5
-		progress = 0.85
-		amount = 3
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = motorized_equipment_1
+			creator = "DOM"
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = american_light_tank_equipment_1 
+			creator = "DOM"
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = artytruck_equipment_0
+			creator = "DOM"
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = HMG_equipment_0
+			creator = "DOM"
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = mortar_equipment_0
+			creator = "DOM"
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = medartillery_equipment_0
+			creator = "DOM"
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = motorized_lia_equipment_01
+			creator = "DOM"
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = recon_mot_equipment_0
+			creator = "DOM"
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = recon_equipment_0
+			creator = "DOM"
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = motorized_AC_equipment_06
+			creator = "DOM"
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = anti_air_equipment_1
+			creator = "DOM"
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = grumman_f3f_equipment_1
+			creator = "DOM" 
+		}
+		requested_factories = 1
+		progress = 0.5
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = northrop_a17_equipment_1
+			creator = "DOM" 
+		}
+		requested_factories = 1
+		progress = 0.5
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = martin_b10_bomber_equipment_1
+			version_name = "Martin B-10B"
+			creator = "DOM" 
+		}
+		requested_factories = 1
+		progress = 0.5
+		efficiency = 50
 	}
 }
