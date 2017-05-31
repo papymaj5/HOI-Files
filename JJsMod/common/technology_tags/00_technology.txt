@@ -132,7 +132,7 @@ technology_folders = {
 			NOT = { original_tag = ITA }
 			NOT = { original_tag = USA }
 			NOT = { original_tag = SOV }
-			#NOT = { original_tag = DOM }
+			NOT = { original_tag = DOM }
 		}
 	}
 	armour_axis_folder = {
@@ -157,7 +157,7 @@ technology_folders = {
 			NOT = { original_tag = FRA }
 			NOT = { original_tag = USA }
 			NOT = { original_tag = ENG }
-			#NOT = { original_tag = DOM }
+			NOT = { original_tag = DOM }
 		}
 	}
 	legacy_ships_folder = {
@@ -169,7 +169,7 @@ technology_folders = {
 			NOT = { original_tag = ENG }
 			NOT = { original_tag = FRA }
 			NOT = { original_tag = SOV }
-			#NOT = { original_tag = DOM }
+			NOT = { original_tag = DOM }
 		}
 	}
 	naval_folder = {
