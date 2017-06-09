@@ -1,6 +1,6 @@
 ﻿capital = 319
 
-oob = "dom_1936"
+oob = "DOM_1936"
 
 set_research_slots = 6
 
@@ -150,7 +150,7 @@ set_convoys = 50
 	complete_national_focus = construction_effort
 	complete_national_focus = production_effort
 	
-	oob = "dom_1939"
+	oob = "DOM_1939"
 	set_technology = {
 		infantry_weapons1 = 1
 
@@ -185,24 +185,24 @@ set_convoys = 50
 set_politics = {
 
 	parties = {
-		democratic = { 
-			popularity = 20
+		conservatism = { 
+			popularity = 0
 		}
 
 		fascism = {
-			popularity = 70
+			popularity = 100
 		}
 		
 		communism = {
-			popularity = 10
+			popularity = 0
 			#banned = no #default is no
 		}
 	}
 	
 	ruling_party = fascism
-	last_election = "1932.11.8"
+	last_election = "1934.5.16"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 
 create_country_leader = {
@@ -210,7 +210,7 @@ create_country_leader = {
 	desc = "POLITICS_RAFAEL_TRUJILLO_DESC"
 	picture = "gfx/leaders/South America/Portrait_South_America_Generic_3.dds"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = fascism_ideology
 	traits = {
 		#
 	}
@@ -229,50 +229,11 @@ create_country_leader = {
 	}
 }
 
-create_corps_commander = {
-	name = "George S. Patton"
-		picture = "Portrait_USA_George_S_Patton.dds"
-	traits = {  trickster panzer_leader }
-	skill = 5
-
-}
-
-create_corps_commander = {
-	name = "Jon J. Clausen"
-		picture = "Portrait_USA_George_S_Patton.dds"
-	traits = {  trickster panzer_leader urban_assault_specialist trait_engineer }
-	skill = 5
-
-}
-
-create_field_marshal = {
-	name = "Dwight D. Eisenhower"
-		picture = "Portrait_USA_Dwight_D_Eisenhower.dds"
-	traits = { logistics_wizard offensive_doctrine }
-	skill = 5
-
-}
-
-create_field_marshal = {
-	name = "Jose Pacheco"
-		picture = "Portrait_USA_Dwight_D_Eisenhower.dds"
-	traits = { logistics_wizard offensive_doctrine thorough_planner organisational_leader inspirational_leader }
-	skill = 5
-
-}
-
-create_navy_leader = {
-	name = "Chester W. Nimitz"
-		picture = "Portrait_USA_Chester_W_Nimitz.dds"
-	traits = { superior_tactician spotter }
-	skill = 5
-}
-
 1939.1.1 = {
 	set_politics = {
 
 		parties = {
-			democratic = { 
+			conservatism = { 
 				popularity = 0
 			}
 
@@ -302,4 +263,147 @@ create_navy_leader = {
 			#
 		}
 	}
+}
+create_corps_commander = {
+	name = "George S. Patton"
+		picture = "Portrait_USA_George_S_Patton.dds"
+	traits = {  trickster panzer_leader }
+	skill = 5
+
+}
+create_corps_commander = {
+	name = "Jon J. Clausen"
+		picture = "Portrait_USA_George_S_Patton.dds"
+	traits = {  trickster panzer_leader urban_assault_specialist trait_engineer }
+	skill = 5
+
+}
+create_field_marshal = {
+	name = "Dwight D. Eisenhower"
+		picture = "Portrait_USA_Dwight_D_Eisenhower.dds"
+	traits = { logistics_wizard offensive_doctrine }
+	skill = 5
+
+}
+create_field_marshal = {
+	name = "Jose Pacheco"
+		picture = "Portrait_USA_Dwight_D_Eisenhower.dds"
+	traits = { logistics_wizard offensive_doctrine thorough_planner organisational_leader inspirational_leader }
+	skill = 5
+
+}
+create_corps_commander = {
+	name = "Barreras Ruíz"
+	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_land_1.dds"
+	traits = { Terrible_General }
+	skill = 1
+}
+create_corps_commander = {
+	name = "Calixte"
+	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_land_2.dds"
+	traits = { Terrible_General trickster_CC }
+	skill = 1
+}
+create_corps_commander = {
+	name = "da Costa-Ruiz"
+	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_land_3.dds"
+	traits = { Bad_General logistics_wizard_CC old_guard }
+	skill = 1
+}
+create_corps_commander = {
+	name = "de los Santos Ortiz"
+	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_land_4.dds"
+	traits = { Terrible_General panzer_leader }
+	skill = 1
+}
+create_corps_commander = {
+	name = "Eliezer Caamaño"
+	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_land_5.dds"
+	traits = { Bad_General defensive_doctrine_CC }
+	skill = 1
+}
+create_corps_commander = {
+	name = "Frías Gómez"
+	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_land_1.dds"
+	traits = { Terrible_General }
+	skill = 1
+}
+create_corps_commander = {
+	name = "Leyba Pou"
+	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_land_2.dds"
+	traits = { Terrible_General commando_CC }
+	skill = 1
+}
+create_corps_commander = {
+	name = "Peña Battle"
+	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_land_3.dds"
+	traits = { Terrible_General }
+	skill = 1
+}
+create_corps_commander = {
+	name = "Rodriguez Garcia"
+	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_land_4.dds"
+	traits = { Terrible_General }
+	skill = 1
+}
+create_corps_commander = {
+	name = "Roman Fernandez"
+	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_land_5.dds"
+	traits = { Bad_General }
+	skill = 2
+}
+create_corps_commander = {
+	name = "Trujillo Molinas  H."
+	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_land_1.dds"
+	traits = { Terrible_General }
+	skill = 1
+}
+create_corps_commander = {
+	name = "Trujillo Molinas  R."
+	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_land_2.dds"
+	traits = { Incompetent_General }
+	skill = 1
+}
+create_corps_commander = {
+	name = "Viñas Roman"
+	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_land_3.dds"
+	traits = { Bad_General offensive_doctrine_CC }
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "Chester W. Nimitz"
+		picture = "Portrait_USA_Chester_W_Nimitz.dds"
+	traits = { superior_tactician spotter }
+	skill = 5
+}
+create_navy_leader = {
+	name =  "Martinez"
+	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_navy_1.dds"
+	traits = { }
+	skill = 1
+}
+create_navy_leader = {
+	name =  "Javier Rivera"
+	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_navy_2.dds"
+	traits = { }
+	skill = 1
+}
+create_navy_leader = {
+	name =  "Rojas"
+	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_navy_3.dds"
+	traits = { }
+	skill = 1
+}
+create_navy_leader = {
+	name =  "Trujillo Molinas"
+	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_navy_1.dds"
+	traits = { }
+	skill = 1
+}
+create_navy_leader = {
+	name =  "Yuna Robles"
+	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_navy_2.dds"
+	traits = { }
+	skill = 1
 }

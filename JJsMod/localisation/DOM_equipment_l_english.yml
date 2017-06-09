@@ -1,5 +1,14 @@
 ﻿l_english:
 
+### DR ###
+##NATION TECH##
+american_tech_1:0 "United States"
+american_tech_2:0 "United States"
+american_tech_3:0 "United States"
+american_tech_4:0 "United States"
+american_tech_5:0 "United States"
+american_tech_6:0 "United States"
+american_tech_7:0 "United States"
 ## Equipment versions ##
  DOM_EQUIPMENT_VERSION_1:0 "E1"
  DOM_EQUIPMENT_VERSION_2:0 "E2"
