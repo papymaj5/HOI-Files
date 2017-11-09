@@ -54,6 +54,16 @@ technology_categories = {
 	cas_bomber
 	jet_technology
 	air_equipment
+	macchi_air 
+	savoia_marchetti_air
+	caproni_air
+	reggiane_air
+	piaggio_air
+	fiat_air
+	cant_air
+	imam_air
+	breda_air
+	ambrosini_air
 	
 	## NAVAL
 	naval_equipment
@@ -66,7 +76,7 @@ technology_categories = {
 	cl_tech
 	aacl_tech
 	ca_tech
-	cav_tech	 
+	cav_tech
 	cv_tech
 	cvb_tech
 	cve_tech
@@ -158,6 +168,7 @@ technology_folders = {
 			NOT = { original_tag = FRA }
 			NOT = { original_tag = USA }
 			NOT = { original_tag = ENG }
+			NOT = { original_tag = ITA }
 			NOT = { original_tag = DOM }
 		}
 	}
@@ -176,10 +187,11 @@ technology_folders = {
 	naval_folder = {
 		available = { 
 			NOT = { original_tag = GER }
+			#NOT = { original_tag = JAP }
 		}
 	}
 	industry_folder
-	ww1_land_doctrine_folder					 
+	ww1_land_doctrine_folder
 	land_doctrine_folder
 	naval_doctrine_folder
 	air_doctrine_folder
@@ -203,41 +215,83 @@ technology_folders = {
 		}
 	}
 	sovietnaval_folder = { available = { original_tag = SOV }}
+	sovietnaval_sub_folder = { available = { original_tag = SOV }}
 	sovietair_folder = { available = { original_tag = SOV }}
 	british_folder = { available = { original_tag = ENG }}
 	britishair_folder = { available = { original_tag = ENG }}
 	britishnaval_folder = { available = { original_tag = ENG }}
+	britishnaval_sub_folder = { available = { original_tag = ENG }}
 	usa_folder = { 
-		available = { 
-			or = {
-				original_tag = USA
-				original_tag = DOM
-			}
-		}
-	}
-	usair_folder = {
-		available = {
-			or = {
-				original_tag = USA
-				original_tag = DOM
-			}
-		}
-	}
+    available = {
+      or = {
+        original_tag = USA
+        original_tag = DOM 
+      }
+    }
+  }
+	usair_folder = { 
+    available = {
+      or = {
+        original_tag = USA
+        original_tag = DOM 
+      }
+    }
+  }
 	usanaval_folder = { 
+    available = {
+      or = {
+        original_tag = USA
+        original_tag = DOM 
+      }
+    }
+  }
+	usanaval_sub_folder = { 
+    available = {
+      or = {
+        original_tag = USA
+        original_tag = DOM 
+      }
+    }
+  }
+	frencharmor_folder = {
 		available = { 
 			or = {
-				original_tag = USA
-				original_tag = DOM
+				original_tag = FRA 
+				original_tag = VIC
 			}
 		}
 	}
-	frencharmor_folder = { available = { original_tag = FRA }}
-	frenchair_folder = { available = { original_tag = FRA }}
-	frenchnaval_folder = { available = { original_tag = FRA }}
+	frenchair_folder  = {
+		available = { 
+			or = {
+				original_tag = FRA 
+				original_tag = VIC
+			}
+		}
+	}
+	frenchnaval_folder  = {
+		available = { 
+			or = {
+				original_tag = FRA
+				original_tag = VIC
+			}
+		}
+	}
+	frenchnaval_sub_folder  = {
+		available = { 
+			or = {
+				original_tag = FRA
+				original_tag = VIC
+			}
+		}
+	}
 	japanarmor_folder = { available = { original_tag = JAP }}
 	japanair_folder = { available = { original_tag = JAP }}
 	japannaval_folder = { available = { original_tag = JAP }}
+	japannaval_sub_folder = { available = { original_tag = JAP }}
 	italyarmor_folder = { available = { original_tag = ITA }}
+	italyair_folder = { available = { original_tag = ITA }}
 	italiannavy_folder = { available = { original_tag = ITA }}
+	italiannavy_sub_folder = { available = { original_tag = ITA }}
 }
 ### EOF ###

@@ -1,0 +1,28 @@
+﻿###########################
+# Startup-Exp
+###########################
+
+add_namespace = xp
+
+country_event = {
+	id = xp.1
+	title = "Start-XP"
+	desc = "For your first Templates. Had to change XP-Cost to one, because AI couldn't handle free templates for some reason."
+	picture = GFX_report_event_soviet_tanks_snow
+	trigger = {
+		date > 1936.1.2
+		is_ai = no
+		NOT { has_global_flag = xp.yes }
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+
+	option = {
+		name = "Thanks"
+		set_global_flag = xp.yes
+		army_experience = 50
+	}
+}

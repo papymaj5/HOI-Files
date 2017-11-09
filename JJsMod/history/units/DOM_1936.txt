@@ -227,37 +227,37 @@ units = {
 		name = "Submarine Squadron 1"				
 		base = 7660
 		location = 7660		
-		ship = { name = "SS-141 A.R.D. S-36" definition = submarine equipment = { submarine_1 = { amount = 1 owner = DOM } } }
-		ship = { name = "SS-142 A.R.D. S-37" definition = submarine equipment = { submarine_1 = { amount = 1 owner = DOM } } }
-		ship = { name = "SS-143 A.R.D. S-38" definition = submarine equipment = { submarine_1 = { amount = 1 owner = DOM } } }
-		ship = { name = "SS-144 A.R.D. S-39" definition = submarine equipment = { submarine_1 = { amount = 1 owner = DOM } } }
-		ship = { name = "SS-145 A.R.D. S-40" definition = submarine equipment = { submarine_1 = { amount = 1 owner = DOM } } }
-		ship = { name = "SS-146 A.R.D. S-41" definition = submarine equipment = { submarine_1 = { amount = 1 owner = DOM } } }
+		ship = { name = "SS-141 A.R.D. S-36" definition = submarine equipment = { usn_patrol_submarine_3 = { amount = 1 owner = DOM } } }
+		ship = { name = "SS-142 A.R.D. S-37" definition = submarine equipment = { usn_patrol_submarine_3 = { amount = 1 owner = DOM } } }
+		ship = { name = "SS-143 A.R.D. S-38" definition = submarine equipment = { usn_patrol_submarine_3 = { amount = 1 owner = DOM } } }
+		ship = { name = "SS-144 A.R.D. S-39" definition = submarine equipment = { usn_patrol_submarine_3 = { amount = 1 owner = DOM } } }
+		ship = { name = "SS-145 A.R.D. S-40" definition = submarine equipment = { usn_patrol_submarine_3 = { amount = 1 owner = DOM } } }
+		ship = { name = "SS-146 A.R.D. S-41" definition = submarine equipment = { usn_patrol_submarine_3 = { amount = 1 owner = DOM } } }
 		# 22nd Submarine Division               
-		ship = { name = "SS-89 A.R.D. R-12" definition = submarine equipment = { submarine_1 = { amount = 1 owner = DOM version_name="R Class" } } }
-		ship = { name = "SS-92 A.R.D. R-15" definition = submarine equipment = { submarine_1 = { amount = 1 owner = DOM version_name="R Class" } } }
-		ship = { name = "SS-93 A.R.D. R-16" definition = submarine equipment = { submarine_1 = { amount = 1 owner = DOM version_name="R Class" } } }
-		ship = { name = "SS-94 A.R.D. R-17" definition = submarine equipment = { submarine_1 = { amount = 1 owner = DOM version_name="R Class" } } }
-		ship = { name = "SS-95 A.R.D. R-18" definition = submarine equipment = { submarine_1 = { amount = 1 owner = DOM version_name="R Class" } } }
-		ship = { name = "SS-96 A.R.D. R-19" definition = submarine equipment = { submarine_1 = { amount = 1 owner = DOM version_name="R Class" } } }
+		ship = { name = "SS-89 A.R.D. R-12" definition = submarine equipment = { usn_patrol_submarine_2 = { amount = 1 owner = DOM version_name="R Class" } } }
+		ship = { name = "SS-92 A.R.D. R-15" definition = submarine equipment = { usn_patrol_submarine_2 = { amount = 1 owner = DOM version_name="R Class" } } }
+		ship = { name = "SS-93 A.R.D. R-16" definition = submarine equipment = { usn_patrol_submarine_2 = { amount = 1 owner = DOM version_name="R Class" } } }
+		ship = { name = "SS-94 A.R.D. R-17" definition = submarine equipment = { usn_patrol_submarine_2 = { amount = 1 owner = DOM version_name="R Class" } } }
+		ship = { name = "SS-95 A.R.D. R-18" definition = submarine equipment = { usn_patrol_submarine_2 = { amount = 1 owner = DOM version_name="R Class" } } }
+		ship = { name = "SS-96 A.R.D. R-19" definition = submarine equipment = { usn_patrol_submarine_2 = { amount = 1 owner = DOM version_name="R Class" } } }
     }
   navy = {					
 		name = "Submarine Squadron 2"				
 		base = 7660
 		location = 7660		
 		# 31st Submarine Division           
-		ship = { name = "SS-105 A.R.D. S-1" definition = submarine equipment = { submarine_1 = { amount = 1 owner = DOM } } }
-		ship = { name = "SS-116 A.R.D. S-11" definition = submarine equipment = { submarine_1 = { amount = 1 owner = DOM } } }
-		ship = { name = "SS-117 A.R.D. S-12" definition = submarine equipment = { submarine_1 = { amount = 1 owner = DOM } } }
-		ship = { name = "SS-118 A.R.D. S-13" definition = submarine equipment = { submarine_1 = { amount = 1 owner = DOM } } }
-		ship = { name = "SS-119 A.R.D. S-14" definition = submarine equipment = { submarine_1 = { amount = 1 owner = DOM } } }
-		ship = { name = "SS-120 A.R.D. S-15" definition = submarine equipment = { submarine_1 = { amount = 1 owner = DOM } } }
-		ship = { name = "SS-121 A.R.D. S-16" definition = submarine equipment = { submarine_1 = { amount = 1 owner = DOM } } }
-		ship = { name = "SS-122 A.R.D. S-17" definition = submarine equipment = { submarine_1 = { amount = 1 owner = DOM } } }
+		ship = { name = "SS-105 A.R.D. S-1" definition = submarine equipment = { usn_patrol_submarine_3 = { amount = 1 owner = DOM } } }
+		ship = { name = "SS-116 A.R.D. S-11" definition = submarine equipment = { usn_patrol_submarine_3 = { amount = 1 owner = DOM } } }
+		ship = { name = "SS-117 A.R.D. S-12" definition = submarine equipment = { usn_patrol_submarine_3 = { amount = 1 owner = DOM } } }
+		ship = { name = "SS-118 A.R.D. S-13" definition = submarine equipment = { usn_patrol_submarine_3 = { amount = 1 owner = DOM } } }
+		ship = { name = "SS-119 A.R.D. S-14" definition = submarine equipment = { usn_patrol_submarine_3 = { amount = 1 owner = DOM } } }
+		ship = { name = "SS-120 A.R.D. S-15" definition = submarine equipment = { usn_patrol_submarine_3 = { amount = 1 owner = DOM } } }
+		ship = { name = "SS-121 A.R.D. S-16" definition = submarine equipment = { usn_patrol_submarine_3 = { amount = 1 owner = DOM } } }
+		ship = { name = "SS-122 A.R.D. S-17" definition = submarine equipment = { usn_patrol_submarine_3 = { amount = 1 owner = DOM } } }
 		# 32nd Submarine Division           
-		ship = { name = "SS-163 A.R.D. Barracuda" definition = submarine equipment = { submarine_1 = { amount = 1 owner = DOM version_name = "Barracuda Class" } } }
-		ship = { name = "SS-164 A.R.D. Bass" definition = submarine equipment = { submarine_1 = { amount = 1 owner = DOM version_name = "Barracuda Class" } } }
-		ship = { name = "SS-165 A.R.D. Bonita" definition = submarine equipment = { submarine_1 = { amount = 1 owner = DOM version_name = "Barracuda Class" } } }
+		ship = { name = "SS-163 A.R.D. Barracuda" definition = submarine equipment = { usn_patrol_submarine_4 = { amount = 1 owner = DOM version_name = "Barracuda Class" } } }
+		ship = { name = "SS-164 A.R.D. Bass" definition = submarine equipment = { usn_patrol_submarine_4 = { amount = 1 owner = DOM version_name = "Barracuda Class" } } }
+		ship = { name = "SS-165 A.R.D. Bonita" definition = submarine equipment = { usn_patrol_submarine_4 = { amount = 1 owner = DOM version_name = "Barracuda Class" } } }
 	}
 }
 
